@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163B280E39CF008F1886 /* Tests_iOS.swift */; };
+		DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */; };
+		DE7A1648280E39CF008F1886 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1647280E39CF008F1886 /* Tests_macOS.swift */; };
+		DE7A164A280E39CF008F1886 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1649280E39CF008F1886 /* Tests_macOSLaunchTests.swift */; };
+		DE7A164B280E39CF008F1886 /* MelioraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1623280E39CD008F1886 /* MelioraApp.swift */; };
+		DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1623280E39CD008F1886 /* MelioraApp.swift */; };
+		DE7A164D280E39CF008F1886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1624280E39CD008F1886 /* ContentView.swift */; };
+		DE7A164E280E39CF008F1886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1624280E39CD008F1886 /* ContentView.swift */; };
+		DE7A164F280E39CF008F1886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7A1625280E39CF008F1886 /* Assets.xcassets */; };
+		DE7A1650280E39CF008F1886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7A1625280E39CF008F1886 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE7A1638280E39CF008F1886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7A161E280E39CD008F1886 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE7A1629280E39CF008F1886;
+			remoteInfo = "Meliora (iOS)";
+		};
+		DE7A1644280E39CF008F1886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7A161E280E39CD008F1886 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE7A162F280E39CF008F1886;
+			remoteInfo = "Meliora (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE7A1623280E39CD008F1886 /* MelioraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelioraApp.swift; sourceTree = "<group>"; };
+		DE7A1624280E39CD008F1886 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE7A1625280E39CF008F1886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE7A162A280E39CF008F1886 /* Meliora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meliora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7A1630280E39CF008F1886 /* Meliora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meliora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7A1632280E39CF008F1886 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DE7A1637280E39CF008F1886 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7A163B280E39CF008F1886 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		DE7A1643280E39CF008F1886 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7A1647280E39CF008F1886 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		DE7A1649280E39CF008F1886 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE7A1627280E39CF008F1886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A162D280E39CF008F1886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A1634280E39CF008F1886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A1640280E39CF008F1886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE7A161D280E39CD008F1886 = {
+			isa = PBXGroup;
+			children = (
+				DE7A1622280E39CD008F1886 /* Shared */,
+				DE7A1631280E39CF008F1886 /* macOS */,
+				DE7A163A280E39CF008F1886 /* Tests iOS */,
+				DE7A1646280E39CF008F1886 /* Tests macOS */,
+				DE7A162B280E39CF008F1886 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE7A1622280E39CD008F1886 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1623280E39CD008F1886 /* MelioraApp.swift */,
+				DE7A1624280E39CD008F1886 /* ContentView.swift */,
+				DE7A1625280E39CF008F1886 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DE7A162B280E39CF008F1886 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A162A280E39CF008F1886 /* Meliora.app */,
+				DE7A1630280E39CF008F1886 /* Meliora.app */,
+				DE7A1637280E39CF008F1886 /* Tests iOS.xctest */,
+				DE7A1643280E39CF008F1886 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE7A1631280E39CF008F1886 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1632280E39CF008F1886 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		DE7A163A280E39CF008F1886 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A163B280E39CF008F1886 /* Tests_iOS.swift */,
+				DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		DE7A1646280E39CF008F1886 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1647280E39CF008F1886 /* Tests_macOS.swift */,
+				DE7A1649280E39CF008F1886 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE7A1629280E39CF008F1886 /* Meliora (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7A1653280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Meliora (iOS)" */;
+			buildPhases = (
+				DE7A1626280E39CF008F1886 /* Sources */,
+				DE7A1627280E39CF008F1886 /* Frameworks */,
+				DE7A1628280E39CF008F1886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meliora (iOS)";
+			productName = "Meliora (iOS)";
+			productReference = DE7A162A280E39CF008F1886 /* Meliora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE7A162F280E39CF008F1886 /* Meliora (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7A1656280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Meliora (macOS)" */;
+			buildPhases = (
+				DE7A162C280E39CF008F1886 /* Sources */,
+				DE7A162D280E39CF008F1886 /* Frameworks */,
+				DE7A162E280E39CF008F1886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meliora (macOS)";
+			productName = "Meliora (macOS)";
+			productReference = DE7A1630280E39CF008F1886 /* Meliora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE7A1636280E39CF008F1886 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7A1659280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				DE7A1633280E39CF008F1886 /* Sources */,
+				DE7A1634280E39CF008F1886 /* Frameworks */,
+				DE7A1635280E39CF008F1886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE7A1639280E39CF008F1886 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = DE7A1637280E39CF008F1886 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DE7A1642280E39CF008F1886 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7A165C280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				DE7A163F280E39CF008F1886 /* Sources */,
+				DE7A1640280E39CF008F1886 /* Frameworks */,
+				DE7A1641280E39CF008F1886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE7A1645280E39CF008F1886 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = DE7A1643280E39CF008F1886 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE7A161E280E39CD008F1886 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DE7A1629280E39CF008F1886 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					DE7A162F280E39CF008F1886 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					DE7A1636280E39CF008F1886 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DE7A1629280E39CF008F1886;
+					};
+					DE7A1642280E39CF008F1886 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DE7A162F280E39CF008F1886;
+					};
+				};
+			};
+			buildConfigurationList = DE7A1621280E39CD008F1886 /* Build configuration list for PBXProject "Meliora" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE7A161D280E39CD008F1886;
+			productRefGroup = DE7A162B280E39CF008F1886 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE7A1629280E39CF008F1886 /* Meliora (iOS) */,
+				DE7A162F280E39CF008F1886 /* Meliora (macOS) */,
+				DE7A1636280E39CF008F1886 /* Tests iOS */,
+				DE7A1642280E39CF008F1886 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE7A1628280E39CF008F1886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7A164F280E39CF008F1886 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A162E280E39CF008F1886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7A1650280E39CF008F1886 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A1635280E39CF008F1886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A1641280E39CF008F1886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE7A1626280E39CF008F1886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7A164D280E39CF008F1886 /* ContentView.swift in Sources */,
+				DE7A164B280E39CF008F1886 /* MelioraApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A162C280E39CF008F1886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7A164E280E39CF008F1886 /* ContentView.swift in Sources */,
+				DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A1633280E39CF008F1886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */,
+				DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7A163F280E39CF008F1886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7A164A280E39CF008F1886 /* Tests_macOSLaunchTests.swift in Sources */,
+				DE7A1648280E39CF008F1886 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE7A1639280E39CF008F1886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE7A1629280E39CF008F1886 /* Meliora (iOS) */;
+			targetProxy = DE7A1638280E39CF008F1886 /* PBXContainerItemProxy */;
+		};
+		DE7A1645280E39CF008F1886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE7A162F280E39CF008F1886 /* Meliora (macOS) */;
+			targetProxy = DE7A1644280E39CF008F1886 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DE7A1651280E39CF008F1886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE7A1652280E39CF008F1886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DE7A1654280E39CF008F1886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
+				PRODUCT_NAME = Meliora;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE7A1655280E39CF008F1886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
+				PRODUCT_NAME = Meliora;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE7A1657280E39CF008F1886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
+				PRODUCT_NAME = Meliora;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DE7A1658280E39CF008F1886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
+				PRODUCT_NAME = Meliora;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DE7A165A280E39CF008F1886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghafla.aibo.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meliora (iOS)";
+			};
+			name = Debug;
+		};
+		DE7A165B280E39CF008F1886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghafla.aibo.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meliora (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE7A165D280E39CF008F1886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghafla.aibo.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Meliora (macOS)";
+			};
+			name = Debug;
+		};
+		DE7A165E280E39CF008F1886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ghafla.aibo.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Meliora (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE7A1621280E39CD008F1886 /* Build configuration list for PBXProject "Meliora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7A1651280E39CF008F1886 /* Debug */,
+				DE7A1652280E39CF008F1886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7A1653280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Meliora (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7A1654280E39CF008F1886 /* Debug */,
+				DE7A1655280E39CF008F1886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7A1656280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Meliora (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7A1657280E39CF008F1886 /* Debug */,
+				DE7A1658280E39CF008F1886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7A1659280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7A165A280E39CF008F1886 /* Debug */,
+				DE7A165B280E39CF008F1886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7A165C280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7A165D280E39CF008F1886 /* Debug */,
+				DE7A165E280E39CF008F1886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE7A161E280E39CD008F1886 /* Project object */;
+}
