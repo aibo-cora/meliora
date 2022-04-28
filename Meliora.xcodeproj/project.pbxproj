@@ -7,16 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */; };
+		98499605000A69408BE1052A /* Pods_Meliora__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */; };
 		DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163B280E39CF008F1886 /* Tests_iOS.swift */; };
 		DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */; };
 		DE7A1648280E39CF008F1886 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1647280E39CF008F1886 /* Tests_macOS.swift */; };
 		DE7A164A280E39CF008F1886 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1649280E39CF008F1886 /* Tests_macOSLaunchTests.swift */; };
 		DE7A164B280E39CF008F1886 /* MelioraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1623280E39CD008F1886 /* MelioraApp.swift */; };
 		DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1623280E39CD008F1886 /* MelioraApp.swift */; };
-		DE7A164D280E39CF008F1886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1624280E39CD008F1886 /* ContentView.swift */; };
-		DE7A164E280E39CF008F1886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1624280E39CD008F1886 /* ContentView.swift */; };
 		DE7A164F280E39CF008F1886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7A1625280E39CF008F1886 /* Assets.xcassets */; };
 		DE7A1650280E39CF008F1886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7A1625280E39CF008F1886 /* Assets.xcassets */; };
+		DE7A1683280E3A20008F1886 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1661280E3A20008F1886 /* Settings.swift */; };
+		DE7A1684280E3A20008F1886 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1661280E3A20008F1886 /* Settings.swift */; };
+		DE7A1685280E3A20008F1886 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1663280E3A20008F1886 /* Identity.swift */; };
+		DE7A1686280E3A20008F1886 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1663280E3A20008F1886 /* Identity.swift */; };
+		DE7A1687280E3A20008F1886 /* Watching.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1666280E3A20008F1886 /* Watching.swift */; };
+		DE7A1688280E3A20008F1886 /* Watching.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1666280E3A20008F1886 /* Watching.swift */; };
+		DE7A1689280E3A20008F1886 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1667280E3A20008F1886 /* Network.swift */; };
+		DE7A168A280E3A20008F1886 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1667280E3A20008F1886 /* Network.swift */; };
+		DE7A168B280E3A20008F1886 /* LiveFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1669280E3A20008F1886 /* LiveFeed.swift */; };
+		DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1669280E3A20008F1886 /* LiveFeed.swift */; };
+		DE7A168D280E3A20008F1886 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166A280E3A20008F1886 /* Session.swift */; };
+		DE7A168E280E3A20008F1886 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166A280E3A20008F1886 /* Session.swift */; };
+		DE7A168F280E3A20008F1886 /* CameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166C280E3A20008F1886 /* CameraPermission.swift */; };
+		DE7A1690280E3A20008F1886 /* CameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166C280E3A20008F1886 /* CameraPermission.swift */; };
+		DE7A1691280E3A20008F1886 /* MicrophonePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166D280E3A20008F1886 /* MicrophonePermission.swift */; };
+		DE7A1692280E3A20008F1886 /* MicrophonePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166D280E3A20008F1886 /* MicrophonePermission.swift */; };
+		DE7A1693280E3A20008F1886 /* StreamingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166F280E3A20008F1886 /* StreamingControl.swift */; };
+		DE7A1694280E3A20008F1886 /* StreamingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166F280E3A20008F1886 /* StreamingControl.swift */; };
+		DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1670280E3A20008F1886 /* StreamerList.swift */; };
+		DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1670280E3A20008F1886 /* StreamerList.swift */; };
+		DE7A1697280E3A20008F1886 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Lobby.swift */; };
+		DE7A1698280E3A20008F1886 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Lobby.swift */; };
+		DE7A1699280E3A20008F1886 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1672280E3A20008F1886 /* Intro.swift */; };
+		DE7A169A280E3A20008F1886 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1672280E3A20008F1886 /* Intro.swift */; };
+		DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1673280E3A20008F1886 /* SignIn.swift */; };
+		DE7A169C280E3A20008F1886 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1673280E3A20008F1886 /* SignIn.swift */; };
+		DE7A169D280E3A20008F1886 /* FrameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1675280E3A20008F1886 /* FrameViewModel.swift */; };
+		DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1675280E3A20008F1886 /* FrameViewModel.swift */; };
+		DE7A169F280E3A20008F1886 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1677280E3A20008F1886 /* Model.swift */; };
+		DE7A16A0280E3A20008F1886 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1677280E3A20008F1886 /* Model.swift */; };
+		DE7A16A1280E3A20008F1886 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1678280E3A20008F1886 /* Channel.swift */; };
+		DE7A16A2280E3A20008F1886 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1678280E3A20008F1886 /* Channel.swift */; };
+		DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167D280E3A20008F1886 /* FrameSupplier.swift */; };
+		DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167D280E3A20008F1886 /* FrameSupplier.swift */; };
+		DE7A16A9280E3A20008F1886 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167E280E3A20008F1886 /* CameraError.swift */; };
+		DE7A16AA280E3A20008F1886 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167E280E3A20008F1886 /* CameraError.swift */; };
+		DE7A16AB280E3A20008F1886 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167F280E3A20008F1886 /* CameraManager.swift */; };
+		DE7A16AC280E3A20008F1886 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167F280E3A20008F1886 /* CameraManager.swift */; };
+		DE7A16AD280E3A20008F1886 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1681280E3A20008F1886 /* View.swift */; };
+		DE7A16AE280E3A20008F1886 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1681280E3A20008F1886 /* View.swift */; };
+		DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
+		DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
+		DEF48C25281B336000D24C9C /* Joint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF48C23281B333D00D24C9C /* Joint.xcframework */; };
+		DEF48C26281B336000D24C9C /* Joint.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEF48C23281B333D00D24C9C /* Joint.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +80,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DE4D3513280F4BA0000AF887 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DEF48C26281B336000D24C9C /* Joint.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		17C6E607B9607C5C78A84A6C /* Pods-Meliora (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		CE93DC729DC5B9F7B71D63D9 /* Pods-Meliora (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD65807BD7267580F9FCAC80 /* Pods-Meliora (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		DE5B82A4280E3BAF00FB71B6 /* Meliora (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Meliora (iOS).entitlements"; sourceTree = "<group>"; };
 		DE7A1623280E39CD008F1886 /* MelioraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelioraApp.swift; sourceTree = "<group>"; };
-		DE7A1624280E39CD008F1886 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE7A1625280E39CF008F1886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE7A162A280E39CF008F1886 /* Meliora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meliora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7A1630280E39CF008F1886 /* Meliora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meliora.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +111,31 @@
 		DE7A1643280E39CF008F1886 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7A1647280E39CF008F1886 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		DE7A1649280E39CF008F1886 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		DE7A1661280E3A20008F1886 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DE7A1663280E3A20008F1886 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		DE7A1666280E3A20008F1886 /* Watching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watching.swift; sourceTree = "<group>"; };
+		DE7A1667280E3A20008F1886 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DE7A1669280E3A20008F1886 /* LiveFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveFeed.swift; sourceTree = "<group>"; };
+		DE7A166A280E3A20008F1886 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		DE7A166C280E3A20008F1886 /* CameraPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermission.swift; sourceTree = "<group>"; };
+		DE7A166D280E3A20008F1886 /* MicrophonePermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophonePermission.swift; sourceTree = "<group>"; };
+		DE7A166F280E3A20008F1886 /* StreamingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingControl.swift; sourceTree = "<group>"; };
+		DE7A1670280E3A20008F1886 /* StreamerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerList.swift; sourceTree = "<group>"; };
+		DE7A1671280E3A20008F1886 /* Lobby.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
+		DE7A1672280E3A20008F1886 /* Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		DE7A1673280E3A20008F1886 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		DE7A1675280E3A20008F1886 /* FrameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameViewModel.swift; sourceTree = "<group>"; };
+		DE7A1677280E3A20008F1886 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DE7A1678280E3A20008F1886 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		DE7A167D280E3A20008F1886 /* FrameSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameSupplier.swift; sourceTree = "<group>"; };
+		DE7A167E280E3A20008F1886 /* CameraError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		DE7A167F280E3A20008F1886 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		DE7A1681280E3A20008F1886 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DE7A1682280E3A20008F1886 /* CGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImage.swift; sourceTree = "<group>"; };
+		DE7A16B1280E3A7D008F1886 /* Meliora--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meliora--iOS--Info.plist"; sourceTree = "<group>"; };
+		DEF48C23281B333D00D24C9C /* Joint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Joint.xcframework; path = Frameworks/Joint.xcframework; sourceTree = "<group>"; };
+		E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (iOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF48C25281B336000D24C9C /* Joint.xcframework in Frameworks */,
+				087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98499605000A69408BE1052A /* Pods_Meliora__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,22 +173,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D942F98304F4AEEFCA3D32D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17C6E607B9607C5C78A84A6C /* Pods-Meliora (iOS).debug.xcconfig */,
+				FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */,
+				DD65807BD7267580F9FCAC80 /* Pods-Meliora (macOS).debug.xcconfig */,
+				CE93DC729DC5B9F7B71D63D9 /* Pods-Meliora (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DE7A161D280E39CD008F1886 = {
 			isa = PBXGroup;
 			children = (
+				DE5B82A4280E3BAF00FB71B6 /* Meliora (iOS).entitlements */,
+				DE7A16B1280E3A7D008F1886 /* Meliora--iOS--Info.plist */,
 				DE7A1622280E39CD008F1886 /* Shared */,
 				DE7A1631280E39CF008F1886 /* macOS */,
 				DE7A163A280E39CF008F1886 /* Tests iOS */,
 				DE7A1646280E39CF008F1886 /* Tests macOS */,
 				DE7A162B280E39CF008F1886 /* Products */,
+				DE7A16B2280E3A9D008F1886 /* Frameworks */,
+				0D942F98304F4AEEFCA3D32D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		DE7A1622280E39CD008F1886 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DE7A1676280E3A20008F1886 /* Data Models */,
+				DE7A165F280E3A20008F1886 /* Intro */,
+				DE7A167B280E3A20008F1886 /* Utility */,
+				DE7A1674280E3A20008F1886 /* View Models */,
 				DE7A1623280E39CD008F1886 /* MelioraApp.swift */,
-				DE7A1624280E39CD008F1886 /* ContentView.swift */,
 				DE7A1625280E39CF008F1886 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -141,6 +249,137 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		DE7A165F280E3A20008F1886 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1660280E3A20008F1886 /* Settings */,
+				DE7A1662280E3A20008F1886 /* Lobby */,
+				DE7A1672280E3A20008F1886 /* Intro.swift */,
+				DE7A1673280E3A20008F1886 /* SignIn.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		DE7A1660280E3A20008F1886 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1661280E3A20008F1886 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DE7A1662280E3A20008F1886 /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1663280E3A20008F1886 /* Identity.swift */,
+				DE7A1664280E3A20008F1886 /* Network */,
+				DE7A1671280E3A20008F1886 /* Lobby.swift */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		DE7A1664280E3A20008F1886 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A166A280E3A20008F1886 /* Session.swift */,
+				DE7A1665280E3A20008F1886 /* Watching */,
+				DE7A1667280E3A20008F1886 /* Network.swift */,
+				DE7A1668280E3A20008F1886 /* Streaming */,
+				DE7A1670280E3A20008F1886 /* StreamerList.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE7A1665280E3A20008F1886 /* Watching */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1666280E3A20008F1886 /* Watching.swift */,
+			);
+			path = Watching;
+			sourceTree = "<group>";
+		};
+		DE7A1668280E3A20008F1886 /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1669280E3A20008F1886 /* LiveFeed.swift */,
+				DE7A166B280E3A20008F1886 /* Permissions */,
+				DE7A166E280E3A20008F1886 /* Controls */,
+			);
+			path = Streaming;
+			sourceTree = "<group>";
+		};
+		DE7A166B280E3A20008F1886 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A166C280E3A20008F1886 /* CameraPermission.swift */,
+				DE7A166D280E3A20008F1886 /* MicrophonePermission.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		DE7A166E280E3A20008F1886 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A166F280E3A20008F1886 /* StreamingControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		DE7A1674280E3A20008F1886 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1675280E3A20008F1886 /* FrameViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		DE7A1676280E3A20008F1886 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1677280E3A20008F1886 /* Model.swift */,
+				DE7A1678280E3A20008F1886 /* Channel.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		DE7A167B280E3A20008F1886 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A167C280E3A20008F1886 /* AV */,
+				DE7A1680280E3A20008F1886 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DE7A167C280E3A20008F1886 /* AV */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A167D280E3A20008F1886 /* FrameSupplier.swift */,
+				DE7A167E280E3A20008F1886 /* CameraError.swift */,
+				DE7A167F280E3A20008F1886 /* CameraManager.swift */,
+			);
+			path = AV;
+			sourceTree = "<group>";
+		};
+		DE7A1680280E3A20008F1886 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1681280E3A20008F1886 /* View.swift */,
+				DE7A1682280E3A20008F1886 /* CGImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE7A16B2280E3A9D008F1886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF48C23281B333D00D24C9C /* Joint.xcframework */,
+				E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */,
+				CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE7A1653280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Meliora (iOS)" */;
 			buildPhases = (
+				191A787F101A3ACD728DBCCD /* [CP] Check Pods Manifest.lock */,
 				DE7A1626280E39CF008F1886 /* Sources */,
 				DE7A1627280E39CF008F1886 /* Frameworks */,
 				DE7A1628280E39CF008F1886 /* Resources */,
+				DE4D3513280F4BA0000AF887 /* Embed Frameworks */,
+				E02D4E944004190FE7DDC01B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +407,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE7A1656280E39CF008F1886 /* Build configuration list for PBXNativeTarget "Meliora (macOS)" */;
 			buildPhases = (
+				35417D8F5E6FA66ABEEC6A2B /* [CP] Check Pods Manifest.lock */,
 				DE7A162C280E39CF008F1886 /* Sources */,
 				DE7A162D280E39CF008F1886 /* Frameworks */,
 				DE7A162E280E39CF008F1886 /* Resources */,
@@ -294,13 +537,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		191A787F101A3ACD728DBCCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meliora (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35417D8F5E6FA66ABEEC6A2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meliora (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E02D4E944004190FE7DDC01B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE7A1626280E39CF008F1886 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7A164D280E39CF008F1886 /* ContentView.swift in Sources */,
+				DE7A168D280E3A20008F1886 /* Session.swift in Sources */,
+				DE7A1689280E3A20008F1886 /* Network.swift in Sources */,
+				DE7A1697280E3A20008F1886 /* Lobby.swift in Sources */,
+				DE7A1683280E3A20008F1886 /* Settings.swift in Sources */,
+				DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */,
+				DE7A16A1280E3A20008F1886 /* Channel.swift in Sources */,
+				DE7A169D280E3A20008F1886 /* FrameViewModel.swift in Sources */,
+				DE7A168F280E3A20008F1886 /* CameraPermission.swift in Sources */,
+				DE7A16AD280E3A20008F1886 /* View.swift in Sources */,
+				DE7A1699280E3A20008F1886 /* Intro.swift in Sources */,
+				DE7A16AB280E3A20008F1886 /* CameraManager.swift in Sources */,
+				DE7A169F280E3A20008F1886 /* Model.swift in Sources */,
+				DE7A1685280E3A20008F1886 /* Identity.swift in Sources */,
+				DE7A168B280E3A20008F1886 /* LiveFeed.swift in Sources */,
+				DE7A1687280E3A20008F1886 /* Watching.swift in Sources */,
+				DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */,
+				DE7A1691280E3A20008F1886 /* MicrophonePermission.swift in Sources */,
+				DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */,
+				DE7A1693280E3A20008F1886 /* StreamingControl.swift in Sources */,
+				DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */,
 				DE7A164B280E39CF008F1886 /* MelioraApp.swift in Sources */,
+				DE7A16A9280E3A20008F1886 /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +635,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7A164E280E39CF008F1886 /* ContentView.swift in Sources */,
+				DE7A168E280E3A20008F1886 /* Session.swift in Sources */,
+				DE7A168A280E3A20008F1886 /* Network.swift in Sources */,
+				DE7A1698280E3A20008F1886 /* Lobby.swift in Sources */,
+				DE7A1684280E3A20008F1886 /* Settings.swift in Sources */,
+				DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */,
+				DE7A16A2280E3A20008F1886 /* Channel.swift in Sources */,
+				DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */,
+				DE7A1690280E3A20008F1886 /* CameraPermission.swift in Sources */,
+				DE7A16AE280E3A20008F1886 /* View.swift in Sources */,
+				DE7A169A280E3A20008F1886 /* Intro.swift in Sources */,
+				DE7A16AC280E3A20008F1886 /* CameraManager.swift in Sources */,
+				DE7A16A0280E3A20008F1886 /* Model.swift in Sources */,
+				DE7A1686280E3A20008F1886 /* Identity.swift in Sources */,
+				DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */,
+				DE7A1688280E3A20008F1886 /* Watching.swift in Sources */,
+				DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */,
+				DE7A1692280E3A20008F1886 /* MicrophonePermission.swift in Sources */,
+				DE7A169C280E3A20008F1886 /* SignIn.swift in Sources */,
+				DE7A1694280E3A20008F1886 /* StreamingControl.swift in Sources */,
+				DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */,
 				DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */,
+				DE7A16AA280E3A20008F1886 /* CameraError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,17 +805,27 @@
 		};
 		DE7A1654280E39CF008F1886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C6E607B9607C5C78A84A6C /* Pods-Meliora (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Meliora (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = $inherited;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Meliora--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera permission to be able to start a cool stream.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone permission to be able to start a cool stream.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -481,6 +838,7 @@
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,17 +846,27 @@
 		};
 		DE7A1655280E39CF008F1886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Meliora (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = R6F5KHKKNX;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = $inherited;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Meliora--iOS--Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow camera permission to be able to start a cool stream.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone permission to be able to start a cool stream.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -511,6 +879,7 @@
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -519,10 +888,12 @@
 		};
 		DE7A1657280E39CF008F1886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD65807BD7267580F9FCAC80 /* Pods-Meliora (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -547,10 +918,12 @@
 		};
 		DE7A1658280E39CF008F1886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE93DC729DC5B9F7B71D63D9 /* Pods-Meliora (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

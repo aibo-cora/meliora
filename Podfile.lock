@@ -1,0 +1,27 @@
+PODS:
+  - MQTTClient (0.15.3):
+    - MQTTClient/Core (= 0.15.3)
+  - MQTTClient/Core (0.15.3):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.15.3):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.15.3)
+  - SocketRocket (0.6.0)
+
+DEPENDENCIES:
+  - MQTTClient (= 0.15.3)
+  - SocketRocket (= 0.6.0)
+
+SPEC REPOS:
+  trunk:
+    - MQTTClient
+    - SocketRocket
+
+SPEC CHECKSUMS:
+  MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+
+PODFILE CHECKSUM: cdc4fda2794933d67f93f5fdab8d1210045ddf7d
+
+COCOAPODS: 1.10.2

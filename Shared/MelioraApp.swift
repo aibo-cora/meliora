@@ -11,7 +11,7 @@ import SwiftUI
 struct MelioraApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Intro()
         }
     }
 }
