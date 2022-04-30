@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/MQTTClient.framework/MQTTClient</key>
 		<data>
-		zHvq1m7FkY1E6GYLceDpJeJKp0g=
+		Wl8eQpT6C4EnEqlUraEncibdLX4=
 		</data>
 		<key>Frameworks/MQTTClient.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/SocketRocket.framework/SocketRocket</key>
 		<data>
-		ZTXC7eVflSST3M5mjkdj/1AURPU=
+		BnQoN96RaKdE+Yi7kGpm2GZ14mE=
 		</data>
 		<key>Frameworks/SocketRocket.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KtswB8L7QJHB9IFQajnHuRpiLf0=
+		RpNxJopW1e9pm2ioh6PLFvFQg/w=
 		</data>
 		<key>Modules/Joint.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Joint.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YKtZky2hHJdiVXjHgAIUtzwkKTw=
+		I7CFqOgcfrycDGEX8a0nt3Pz1oY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXlmhyOedsk+rT0iGzF2FlvSPKjWHjUhirbC14wt8F0=
+			m6/bcYdcsJqnmzK6kuuUcHspd4VNZXTQ14SdNrs2eUY=
 			</data>
 		</dict>
 		<key>Frameworks/MQTTClient.framework/_CodeSignature/CodeResources</key>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WEQ0y6gsGKp0MlOp5AZspOuE8NTcVRDOJPq9gRxQlw8=
+			earQdAcgjdhL1LFwFGhsjSrls+FdST8r5a+BCdfoexU=
 			</data>
 		</dict>
 		<key>Frameworks/SocketRocket.framework/_CodeSignature/CodeResources</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WwmfYZCZRI25pygXdWgzzi/oBh9/yAGqZCEpmeYeC3A=
+			2tnNtMdwtpp1Ob3+MpWe6B2QomW77LYUO/CXHMit5Pg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
