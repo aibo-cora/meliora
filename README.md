@@ -1,2 +1,2 @@
 # meliora
-Prove of concept for `Joint`
+Proof of concept for `Joint`
