@@ -10,10 +10,10 @@ import Joint
 import Combine
 
 public class Session: NSObject, ObservableObject {
-    let broker = Broker(ip: "2457aa93d1444b8cb0dd5d5891a3c3d6.s1.eu.hivemq.cloud",
+    let broker = Broker(ip: "c1a929ba1d4d441795f8467aa6277663.s1.eu.hivemq.cloud",
                       port: 8883,
-                  username: "test.admin",
-                  password: "P2ssword")
+                  username: "aibo-cora",
+                  password: "sq!2L!EcFz9b!JA")
     lazy var components = CaptureComponents(captureSession: CameraManager.shared.session, delegate: FrameSupplier.shared)
     
     public override init() {
@@ -23,7 +23,7 @@ public class Session: NSObject, ObservableObject {
                                     broker: broker,
                          captureComponents: components,
                                   delegate: nil,
-                               loggingFlag: false)
+                               loggingFlag: true)
         setupSubscription()
     }
     
@@ -53,6 +53,10 @@ public class Session: NSObject, ObservableObject {
                 if try await jointSession?.configureClient() == true {
                     return (true, nil)
                 }
+            } catch JointSessionError.invalidAPIKey {
+                
+            } catch JointSessionError.clientConfiguration {
+                
             }
             
             return (false, nil)
