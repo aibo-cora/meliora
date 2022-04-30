@@ -60,7 +60,7 @@ public enum JointSessionError : Swift.Error {
   final public var $sessionError: Combine.Published<Joint.JointSessionError>.Publisher {
     get
   }
-  @objc public init(broker: Joint.Broker, captureComponents: Joint.CaptureComponents, delegate: Joint.JointSessionDelegate?, loggingFlag: Swift.Bool = false)
+  @objc public init(apiKey: Swift.String, broker: Joint.Broker, captureComponents: Joint.CaptureComponents, delegate: Joint.JointSessionDelegate?, loggingFlag: Swift.Bool = false)
   @Combine.Published @_projectedValueProperty($activeStreamers) final public var activeStreamers: Swift.Set<Joint.Streamer> {
     get
     set
@@ -87,7 +87,7 @@ extension Joint.JointSession {
   @objc final public func configurePlayer(watching streamer: Joint.Streamer, using player: AVFoundation.AVQueuePlayer)
 }
 @objc final public class Broker : ObjectiveC.NSObject {
-  @objc public init(ip: Swift.String, port: Swift.UInt32, username: Swift.String, password: Swift.String, isSecure: Swift.Bool = true, apiKey: Swift.String)
+  @objc public init(ip: Swift.String, port: Swift.UInt32, username: Swift.String, password: Swift.String, isSecure: Swift.Bool = true)
   @objc deinit
 }
 public enum SessionStatus : Swift.CustomStringConvertible {

@@ -16,10 +16,10 @@ class FrameSupplier: NSObject, ObservableObject {
     var current: CVPixelBuffer?
     
     let videoOutputQueue = DispatchQueue(label: "video.output.queue",
-                                         qos: .userInitiated,
-                                         attributes: [],
-                                         autoreleaseFrequency: .workItem,
-                                         target: nil)
+                                           qos: .userInitiated,
+                                    attributes: [],
+                          autoreleaseFrequency: .workItem,
+                                        target: nil)
     
     private override init() {
         super.init()

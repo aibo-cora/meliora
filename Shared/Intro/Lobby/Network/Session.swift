@@ -10,17 +10,17 @@ import Joint
 import Combine
 
 public class Session: NSObject, ObservableObject {
-    let broker = Broker(ip: <#ServerIP#>,
-                      port: <#Port#>,
-                  username: <#username#>,
-                  password: <#password#>,
-                    apiKey: "C!9X5&/WPuU(6pp5")
+    let broker = Broker(ip: "2457aa93d1444b8cb0dd5d5891a3c3d6.s1.eu.hivemq.cloud",
+                      port: 8883,
+                  username: "test.admin",
+                  password: "P2ssword")
     lazy var components = CaptureComponents(captureSession: CameraManager.shared.session, delegate: FrameSupplier.shared)
     
     public override init() {
         super.init()
         
-        jointSession = JointSession(broker: broker,
+        jointSession = JointSession(apiKey: "C!9X5&/WPuU(6pp5",
+                                    broker: broker,
                          captureComponents: components,
                                   delegate: nil,
                                loggingFlag: false)
@@ -28,9 +28,6 @@ public class Session: NSObject, ObservableObject {
     }
     
     var jointSession: JointSession?
-    
-    private var statusSub: AnyCancellable?
-    private var streamerSub: AnyCancellable?
     
     @Published
     var sessionStatus: SessionStatus = .unknown
@@ -41,10 +38,6 @@ public class Session: NSObject, ObservableObject {
         jointSession?.$sessionStatus
             .receive(on: RunLoop.main, options: nil)
             .assign(to: &$sessionStatus)
-        statusSub = jointSession?.$sessionStatus
-            .sink(receiveValue: { status in
-                print(status)
-            })
         
         jointSession?.$activeStreamers
             .receive(on: RunLoop.main, options: nil)
@@ -66,13 +59,5 @@ public class Session: NSObject, ObservableObject {
         }
         
         return try? await task.result.get()
-    }
-    
-    func start(watching streamer: Streamer) {
-        
-    }
-    
-    func stop(watching streamer: Streamer) {
-        
     }
 }

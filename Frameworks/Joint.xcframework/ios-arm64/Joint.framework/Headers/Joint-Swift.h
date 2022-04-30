@@ -233,7 +233,7 @@ SWIFT_CLASS("_TtC5Joint6Broker")
 ///
 /// \param apiKey API key describing your scopes
 ///
-- (nonnull instancetype)initWithIp:(NSString * _Nonnull)ip port:(uint32_t)port username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password isSecure:(BOOL)isSecure apiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithIp:(NSString * _Nonnull)ip port:(uint32_t)port username:(NSString * _Nonnull)username password:(NSString * _Nonnull)password isSecure:(BOOL)isSecure OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -267,7 +267,7 @@ SWIFT_CLASS("_TtC5Joint12JointSession")
 ///
 /// \param loggingFlag Show logs? default is <code>false</code>
 ///
-- (nonnull instancetype)initWithBroker:(Broker * _Nonnull)broker captureComponents:(CaptureComponents * _Nonnull)captureComponents delegate:(id <JointSessionDelegate> _Nullable)delegate loggingFlag:(BOOL)loggingFlag OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey broker:(Broker * _Nonnull)broker captureComponents:(CaptureComponents * _Nonnull)captureComponents delegate:(id <JointSessionDelegate> _Nullable)delegate loggingFlag:(BOOL)loggingFlag OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

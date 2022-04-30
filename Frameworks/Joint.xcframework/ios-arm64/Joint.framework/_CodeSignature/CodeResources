@@ -10,7 +10,7 @@
 		</data>
 		<key>Frameworks/MQTTClient.framework/MQTTClient</key>
 		<data>
-		TCSW4U1gVBhz0Gug3d8B3NoSzNw=
+		zHvq1m7FkY1E6GYLceDpJeJKp0g=
 		</data>
 		<key>Frameworks/MQTTClient.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/SocketRocket.framework/SocketRocket</key>
 		<data>
-		eVDlicCtFc9X0Ex2LAAr1RvXrIU=
+		ZTXC7eVflSST3M5mjkdj/1AURPU=
 		</data>
 		<key>Frameworks/SocketRocket.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/Joint-Swift.h</key>
 		<data>
-		ALRvzSkfRE63MWsMqJrPR9/wZc0=
+		BW4gN688cQRWTMvHNj0wOgr65dI=
 		</data>
 		<key>Headers/Joint.h</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ii4v9rMtZXGMedBZl+KhbJuQedA=
+		KtswB8L7QJHB9IFQajnHuRpiLf0=
 		</data>
 		<key>Modules/Joint.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		up+FxCSFFCNjUkmZ7jgkD5tx4hw=
+		wnyEottBaDi0vqNM/3LLUQASQZ0=
 		</data>
 		<key>Modules/Joint.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		S4LIGv2GrGGuP8/h9U+hP0IMmHs=
+		LBgvZwPpKbiYFu6iW1tXMKaUXRs=
 		</data>
 		<key>Modules/Joint.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/PlzaZkNn26fCIZnAC52TZvhMMg=
+		YKtZky2hHJdiVXjHgAIUtzwkKTw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h7npZ8drSU4O/VPYdQRuV/G4D9ePcdF4FyCNBQhaVqg=
+			eXlmhyOedsk+rT0iGzF2FlvSPKjWHjUhirbC14wt8F0=
 			</data>
 		</dict>
 		<key>Frameworks/MQTTClient.framework/_CodeSignature/CodeResources</key>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+E03SPA5n4vozLkrCP3a3KpAdWQmtKmI7hr5BlaIz0s=
+			WEQ0y6gsGKp0MlOp5AZspOuE8NTcVRDOJPq9gRxQlw8=
 			</data>
 		</dict>
 		<key>Frameworks/SocketRocket.framework/_CodeSignature/CodeResources</key>
@@ -105,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WBSEMRJNupvouoh9qdxq1cyRO0cI0Z40gP3jgccDwcU=
+			L7C7sCWdlZ+no2Mzif/ynoVhl0O9YX+0F2C9Dz1UdUM=
 			</data>
 		</dict>
 		<key>Headers/Joint.h</key>
@@ -119,21 +119,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jajZk/X4yH0dx3aHWqcJprNC7rrYb1EnLh0pMZGBckA=
+			tGa3vN5AbCRSJZSl9gLy3W1XTc4rr+Ms/bASZ0HSaGo=
 			</data>
 		</dict>
 		<key>Modules/Joint.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wa9pWsYI2pD1nTiyyWrGaqQDjOtyTR+Ufgq2BKwtkAs=
+			AtJ9z7SrfV2ozOmqftfHf/0Sci5gmsrIhsTU1BSTi2o=
 			</data>
 		</dict>
 		<key>Modules/Joint.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZLspu//7QTuZd/5VMe9hr8vJ2DnmD3ofll8WS1pi66k=
+			WwmfYZCZRI25pygXdWgzzi/oBh9/yAGqZCEpmeYeC3A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

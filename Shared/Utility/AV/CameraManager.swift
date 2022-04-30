@@ -6,7 +6,6 @@ class CameraManager: ObservableObject {
     let session = AVCaptureSession()
     
     private let sessionQueue = DispatchQueue(label: "capture.session.serial")
-    private let videoOutput = AVCaptureVideoDataOutput()
     private var status = Status.unconfigured
     
     var streaming = false
