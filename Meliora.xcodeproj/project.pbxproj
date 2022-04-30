@@ -59,8 +59,7 @@
 		DE7A16AE280E3A20008F1886 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1681280E3A20008F1886 /* View.swift */; };
 		DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
 		DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
-		DEF48C25281B336000D24C9C /* Joint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF48C23281B333D00D24C9C /* Joint.xcframework */; };
-		DEF48C26281B336000D24C9C /* Joint.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEF48C23281B333D00D24C9C /* Joint.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEF48C2A281DB94D00D24C9C /* joint-spm in Frameworks */ = {isa = PBXBuildFile; productRef = DEF48C29281DB94D00D24C9C /* joint-spm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +86,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DEF48C26281B336000D24C9C /* Joint.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +131,6 @@
 		DE7A1681280E3A20008F1886 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DE7A1682280E3A20008F1886 /* CGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImage.swift; sourceTree = "<group>"; };
 		DE7A16B1280E3A7D008F1886 /* Meliora--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meliora--iOS--Info.plist"; sourceTree = "<group>"; };
-		DEF48C23281B333D00D24C9C /* Joint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Joint.xcframework; path = Frameworks/Joint.xcframework; sourceTree = "<group>"; };
 		E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (iOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF48C25281B336000D24C9C /* Joint.xcframework in Frameworks */,
+				DEF48C2A281DB94D00D24C9C /* joint-spm in Frameworks */,
 				087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +370,6 @@
 		DE7A16B2280E3A9D008F1886 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEF48C23281B333D00D24C9C /* Joint.xcframework */,
 				E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */,
 				CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */,
 			);
@@ -399,6 +395,9 @@
 			dependencies = (
 			);
 			name = "Meliora (iOS)";
+			packageProductDependencies = (
+				DEF48C29281DB94D00D24C9C /* joint-spm */,
+			);
 			productName = "Meliora (iOS)";
 			productReference = DE7A162A280E39CF008F1886 /* Meliora.app */;
 			productType = "com.apple.product-type.application";
@@ -492,6 +491,9 @@
 				Base,
 			);
 			mainGroup = DE7A161D280E39CD008F1886;
+			packageReferences = (
+				DEF48C28281DB94D00D24C9C /* XCRemoteSwiftPackageReference "joint-spm" */,
+			);
 			productRefGroup = DE7A162B280E39CF008F1886 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1074,6 +1076,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEF48C28281DB94D00D24C9C /* XCRemoteSwiftPackageReference "joint-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:aibo-cora/joint-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEF48C29281DB94D00D24C9C /* joint-spm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEF48C28281DB94D00D24C9C /* XCRemoteSwiftPackageReference "joint-spm" */;
+			productName = "joint-spm";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE7A161E280E39CD008F1886 /* Project object */;
 }
