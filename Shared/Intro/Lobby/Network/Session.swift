@@ -10,10 +10,10 @@ import Joint
 import Combine
 
 public class Session: NSObject, ObservableObject {
-    let broker = Broker(ip: "c1a929ba1d4d441795f8467aa6277663.s1.eu.hivemq.cloud",
-                      port: 8883,
-                  username: "aibo-cora",
-                  password: "sq!2L!EcFz9b!JA",
+    let broker = Broker(ip: <#ServerIP#>,
+                      port: <#Port#>,
+                  username: <#username#>,
+                  password: <#password#>,
                     apiKey: "C!9X5&/WPuU(6pp5")
     lazy var components = CaptureComponents(captureSession: CameraManager.shared.session, delegate: FrameSupplier.shared)
     
