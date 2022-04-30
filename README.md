@@ -1,5 +1,5 @@
 # meliora
-This is a streaming app that is using a custom video streaming framework `Joint`.
+This is a streaming app that is using a custom video streaming framework `Joint` - https://github.com/aibo-cora/joint-spm
 <br>
 <br>
 This app is just a shell for now, proof of concept. You are more than welcome to contribute to this project.
