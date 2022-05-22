@@ -9,8 +9,7 @@ import SwiftUI
 import Joint
 
 struct StreamerList: View {
-    @State
-    private var active = false
+    @State private var active = false
     
     var streamers: [Streamer]
     let session: Session?
