@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */; };
 		98499605000A69408BE1052A /* Pods_Meliora__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */; };
-		DE6B65D02821D0D500056861 /* joint-spm in Frameworks */ = {isa = PBXBuildFile; productRef = DE6B65CF2821D0D500056861 /* joint-spm */; };
+		DE5C6D67283A9FB3002273F5 /* joint-spm in Frameworks */ = {isa = PBXBuildFile; productRef = DE5C6D66283A9FB3002273F5 /* joint-spm */; };
 		DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163B280E39CF008F1886 /* Tests_iOS.swift */; };
 		DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */; };
 		DE7A1648280E39CF008F1886 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1647280E39CF008F1886 /* Tests_macOS.swift */; };
@@ -38,8 +38,8 @@
 		DE7A1694280E3A20008F1886 /* StreamingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166F280E3A20008F1886 /* StreamingControl.swift */; };
 		DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1670280E3A20008F1886 /* StreamerList.swift */; };
 		DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1670280E3A20008F1886 /* StreamerList.swift */; };
-		DE7A1697280E3A20008F1886 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Lobby.swift */; };
-		DE7A1698280E3A20008F1886 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Lobby.swift */; };
+		DE7A1697280E3A20008F1886 /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Staging.swift */; };
+		DE7A1698280E3A20008F1886 /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Staging.swift */; };
 		DE7A1699280E3A20008F1886 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1672280E3A20008F1886 /* Intro.swift */; };
 		DE7A169A280E3A20008F1886 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1672280E3A20008F1886 /* Intro.swift */; };
 		DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1673280E3A20008F1886 /* SignIn.swift */; };
@@ -120,7 +120,7 @@
 		DE7A166D280E3A20008F1886 /* MicrophonePermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophonePermission.swift; sourceTree = "<group>"; };
 		DE7A166F280E3A20008F1886 /* StreamingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingControl.swift; sourceTree = "<group>"; };
 		DE7A1670280E3A20008F1886 /* StreamerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerList.swift; sourceTree = "<group>"; };
-		DE7A1671280E3A20008F1886 /* Lobby.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
+		DE7A1671280E3A20008F1886 /* Staging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
 		DE7A1672280E3A20008F1886 /* Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		DE7A1673280E3A20008F1886 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		DE7A1675280E3A20008F1886 /* FrameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameViewModel.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE6B65D02821D0D500056861 /* joint-spm in Frameworks */,
+				DE5C6D67283A9FB3002273F5 /* joint-spm in Frameworks */,
 				087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +270,7 @@
 		DE7A1662280E3A20008F1886 /* Lobby */ = {
 			isa = PBXGroup;
 			children = (
-				DE7A1663280E3A20008F1886 /* Identity.swift */,
 				DE7A1664280E3A20008F1886 /* Network */,
-				DE7A1671280E3A20008F1886 /* Lobby.swift */,
 			);
 			path = Lobby;
 			sourceTree = "<group>";
@@ -280,11 +278,11 @@
 		DE7A1664280E3A20008F1886 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				DE7A166A280E3A20008F1886 /* Session.swift */,
-				DE7A1665280E3A20008F1886 /* Watching */,
+				DE7A1663280E3A20008F1886 /* Identity.swift */,
 				DE7A1667280E3A20008F1886 /* Network.swift */,
-				DE7A1668280E3A20008F1886 /* Streaming */,
 				DE7A1670280E3A20008F1886 /* StreamerList.swift */,
+				DE7A1665280E3A20008F1886 /* Watching */,
+				DE7A1668280E3A20008F1886 /* Streaming */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -300,6 +298,7 @@
 		DE7A1668280E3A20008F1886 /* Streaming */ = {
 			isa = PBXGroup;
 			children = (
+				DE7A1671280E3A20008F1886 /* Staging.swift */,
 				DE7A1669280E3A20008F1886 /* LiveFeed.swift */,
 				DE7A166B280E3A20008F1886 /* Permissions */,
 				DE7A166E280E3A20008F1886 /* Controls */,
@@ -344,6 +343,7 @@
 		DE7A167B280E3A20008F1886 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				DE7A166A280E3A20008F1886 /* Session.swift */,
 				DE7A167C280E3A20008F1886 /* AV */,
 				DE7A1680280E3A20008F1886 /* Extensions */,
 			);
@@ -398,7 +398,7 @@
 			);
 			name = "Meliora (iOS)";
 			packageProductDependencies = (
-				DE6B65CF2821D0D500056861 /* joint-spm */,
+				DE5C6D66283A9FB3002273F5 /* joint-spm */,
 			);
 			productName = "Meliora (iOS)";
 			productReference = DE7A162A280E39CF008F1886 /* Meliora.app */;
@@ -494,7 +494,7 @@
 			);
 			mainGroup = DE7A161D280E39CD008F1886;
 			packageReferences = (
-				DE6B65CE2821D0D500056861 /* XCRemoteSwiftPackageReference "joint-spm" */,
+				DE5C6D65283A9FB3002273F5 /* XCRemoteSwiftPackageReference "joint-spm" */,
 			);
 			productRefGroup = DE7A162B280E39CF008F1886 /* Products */;
 			projectDirPath = "";
@@ -612,7 +612,7 @@
 			files = (
 				DE7A168D280E3A20008F1886 /* Session.swift in Sources */,
 				DE7A1689280E3A20008F1886 /* Network.swift in Sources */,
-				DE7A1697280E3A20008F1886 /* Lobby.swift in Sources */,
+				DE7A1697280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1683280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */,
 				DE7A16A1280E3A20008F1886 /* Channel.swift in Sources */,
@@ -641,7 +641,7 @@
 			files = (
 				DE7A168E280E3A20008F1886 /* Session.swift in Sources */,
 				DE7A168A280E3A20008F1886 /* Network.swift in Sources */,
-				DE7A1698280E3A20008F1886 /* Lobby.swift in Sources */,
+				DE7A1698280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1684280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */,
 				DE7A16A2280E3A20008F1886 /* Channel.swift in Sources */,
@@ -1080,7 +1080,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE6B65CE2821D0D500056861 /* XCRemoteSwiftPackageReference "joint-spm" */ = {
+		DE5C6D65283A9FB3002273F5 /* XCRemoteSwiftPackageReference "joint-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:aibo-cora/joint-spm.git";
 			requirement = {
@@ -1091,9 +1091,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DE6B65CF2821D0D500056861 /* joint-spm */ = {
+		DE5C6D66283A9FB3002273F5 /* joint-spm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE6B65CE2821D0D500056861 /* XCRemoteSwiftPackageReference "joint-spm" */;
+			package = DE5C6D65283A9FB3002273F5 /* XCRemoteSwiftPackageReference "joint-spm" */;
 			productName = "joint-spm";
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -22,10 +22,7 @@ struct Identity: View {
                 Text("\(user.email)")
                     .font(.footnote)
                     .lineLimit(1)
-                    
             }
-            .navigationTitle("Lobby")
-            .navigationBarTitleDisplayMode(.inline)
             .opacity(didAppear ? 0.5 : 1)
         }
         .padding()

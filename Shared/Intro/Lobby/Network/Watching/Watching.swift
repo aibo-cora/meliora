@@ -13,7 +13,7 @@ struct Watching: View {
     let streamer: Streamer
     let session: Session?
     
-    public var player = AVQueuePlayer()
+    @State private var player = AVQueuePlayer()
     
     var body: some View {
         CustomVideoPlayer(player: player)
@@ -24,14 +24,11 @@ struct Watching: View {
             .onDisappear() {
                 player.pause()
             }
-            .ignoresSafeArea()
-            .frame(minWidth: nil, idealWidth: nil, maxWidth: .infinity, minHeight: nil, idealHeight: nil, maxHeight: .infinity)
             .background(Color.gray)
     }
 }
 
 class PlayerView: UIView {
-
     // Override the property to make AVPlayerLayer the view's backing layer.
     override static var layerClass: AnyClass { AVPlayerLayer.self }
     
@@ -41,7 +38,7 @@ class PlayerView: UIView {
         set { playerLayer.player = newValue }
     }
     
-    private var playerLayer: AVPlayerLayer { layer as! AVPlayerLayer }
+    public var playerLayer: AVPlayerLayer { layer as! AVPlayerLayer }
 }
 
 struct CustomVideoPlayer: UIViewRepresentable {
@@ -49,6 +46,8 @@ struct CustomVideoPlayer: UIViewRepresentable {
 
     func makeUIView(context: Context) -> PlayerView {
         let view = PlayerView()
+        
+        view.playerLayer.videoGravity = .resizeAspectFill
         view.player = player
         return view
     }
