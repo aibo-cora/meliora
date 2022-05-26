@@ -9,15 +9,28 @@ import SwiftUI
 import Joint
 
 struct Intro: View {
-    private var user = User()
+    let udKey = "Meliora.User.Auth"
+    
+    var user: User {
+        if let data = UserDefaults.standard.data(forKey: udKey) {
+            if let user = try? JSONDecoder().decode(User.self, from: data) {
+                return user
+            }
+        }
+        return User(name: "Unknown", email: "Unknown")
+    }
     @State var authenticated = false
     
     var body: some View {
-        if authenticated {
-            Network(channel: "", user: user)
-        } else {
+        if firstTimeUser {
             SignIn(user: user, authenticated: $authenticated)
+        } else {
+            Network(channel: "", user: user)
         }
+    }
+    
+    var firstTimeUser: Bool {
+        user.name == "Unknown" && user.email == "Unknown"
     }
 }
 
