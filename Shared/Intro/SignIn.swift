@@ -10,40 +10,46 @@ import AuthenticationServices
 import Joint
 
 struct SignIn: View {
+    let udKey = "Meliora.User.Auth"
     var user: User
+    
     @Binding var authenticated: Bool
     
     var body: some View {
         VStack {
             Text("Please sign in with Apple to identify yourself on the network")
                 .font(.footnote)
-            SignInWithAppleButton(
-                .signIn,
-                onRequest: { request in request.requestedScopes = [.fullName, .email] },
-                onCompletion: { result in
-                    switch result {
-                    case .success (let auth):
-                        guard let credentials = auth.credential as? ASAuthorizationAppleIDCredential else { return }
-                        
-                        let name = credentials.fullName?.givenName ?? "Unknown"
-                        let email = credentials.email ?? "\(UUID().uuidString)"
-                        
+            SignInWithAppleButton(.signIn) { request in
+                request.requestedScopes = [.fullName, .email]
+            } onCompletion: { result in
+                switch result {
+                case .success (let auth):
+                    guard let credentials = auth.credential as? ASAuthorizationAppleIDCredential else { return }
+                    
+                    if let name = credentials.fullName?.formatted(), let email = credentials.email {
                         user.update(name: name, email: email)
-                        SaveCredentials()
-                        
-                        authenticated.toggle()
-                    case .failure (let error):
-                        
-                        print("Authorization failed: " + error.localizedDescription)
+                        SaveCredentials(identifier: credentials.user)
+                    } else {
+                        NSLog("The user has authorized this app before and is stored.")
                     }
-            })
+                    
+                    authenticated = true
+                case .failure (let error):
+                    print("Authorization failed: " + error.localizedDescription)
+                }
+            }
             .frame(width: 200, height: 30)
             .font(.title)
         }
     }
     
-    private func SaveCredentials() {
-        print(user.name, user.email)
+    /// This should be saved in the keychain or external database to survive app deletion.
+    /// - Parameter identifier: Unique Apple auth ID
+    private func SaveCredentials(identifier: String) {
+        print(user.name, user.email, identifier)
+        
+        let data = try? JSONEncoder().encode(user)
+        UserDefaults.standard.set(data, forKey: udKey)
     }
 }
 
