@@ -36,7 +36,7 @@ struct StreamingControl: View {
         if status == .connected {
             Button(action: {
                 print(CameraManager.shared.streaming ? "Stopped streaming" : "Started streaming")
-                CameraManager.shared.streaming ? session?.stopSession() : session?.startSession(streamer: streamer)
+                CameraManager.shared.streaming ? session?.stopSession(streamer: streamer) : session?.startSession(streamer: streamer)
                 CameraManager.shared.streaming.toggle()
             }) {
                 Image(systemName: CameraManager.shared.streaming ? "stop.fill" : "circle.fill")

@@ -22,10 +22,10 @@ struct Intro: View {
     @State var authenticated = false
     
     var body: some View {
-        if firstTimeUser {
+        if false {
             SignIn(user: user, authenticated: $authenticated)
         } else {
-            Network(channel: "", user: user)
+            Network(channel: "", user: User(name: "John Doe", email: "john.doe@gmail.com"))
         }
     }
     
