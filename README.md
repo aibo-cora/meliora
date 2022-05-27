@@ -16,6 +16,9 @@ Add these to your pod file.
 </pre>
 
 <h4>Known Issues</h4>
-- Sign in with Apple does not provide a unique network User.<br>
+- Sign in with Apple is hadcoded.<br>
+    <t> Resolution:
+    <t>     <t>need to setup a dedicated container running postgres on AWS.<br>
 - Selecting a streamer from the list should display a preview of the stream and show streamer's description.<br>
-- Video stream is clipped on top and botton (iPhone X), left and right side (iPad)<br>
+<br><br>
+Joint version: <code>1.0.8</code>
