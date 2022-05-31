@@ -40,27 +40,30 @@ struct SignIn: View {
     /// This should be saved in the keychain or external database to survive app deletion.
     /// - Parameter credentials: Apple auth credentials
     private func SaveCredentials(credentials: ASAuthorizationAppleIDCredential) {
-        if let given = credentials.fullName?.givenName, let family = credentials.fullName?.familyName, let email = credentials.email {
-            let user = User(first: given,
-                            last: family,
-                            email: email,
-                            appleID: credentials.user,
-                            rank: User.UserRank(id: 1, title: "basic"))
-            Task {
-                do {
-                    if let _ = try await network.create(user: user) {
-                        UserDefaults.standard.set(try JSONEncoder().encode(user), forKey: udUserKey)
-                        
-                        self.user.update(first: user.given, last: user.family, email: user.email, appleID: user.id, rank: User.UserRank(id: 1 ))
-                    }
-                } catch NetworkCom.NetworkErrors.database {
-                    print("Database operation could not be completed. Check database log.")
-                } catch NetworkCom.NetworkErrors.request {
-                    print("Bad request.")
+        let user = User(first: credentials.fullName?.givenName ?? "",
+                        last: credentials.fullName?.familyName ?? "",
+                        email: credentials.email ?? "",
+                        appleID: credentials.user,
+                        rank: User.UserRank(id: 1, title: "basic"))
+        Task {
+            do {
+                if let response = try await network.create(user: user) {
+                    UserDefaults.standard.set(response, forKey: udUserKey)
+
+                    let persisted = try JSONDecoder().decode(User.self, from: response)
+                    self.user.update(first: persisted.given,
+                                      last: persisted.family,
+                                     email: persisted.email,
+                                     appleID: persisted.id,
+                                     rank: persisted.rank)
                 }
+            } catch NetworkCom.NetworkErrors.database {
+                print("Database operation could not be completed. Check database log.")
+            } catch NetworkCom.NetworkErrors.request {
+                print("Bad request.")
+            } catch {
+                print("Could not decode response.")
             }
-        } else {
-            // user info is in the database?
         }
     }
 }

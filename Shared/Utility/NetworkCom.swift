@@ -22,7 +22,7 @@ final class NetworkCom: ObservableObject {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
-        request.httpBody = try? encoder.encode(user)
+        request.httpBody = try encoder.encode(user)
         request.httpMethod = "POST"
         
         do {
