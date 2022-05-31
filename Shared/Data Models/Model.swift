@@ -20,12 +20,12 @@ class Model: ObservableObject {
     var selected: Streamer? = nil
 
     init() {
-        self.streamers = [Streamer(user: User(name: "Yura", email: "yura.fila@gmail.com"), channel: ""),
-                          Streamer(user: User(name: "Tom", email: "yura.fila@gmail.com"), channel: ""),
-                          Streamer(user: User(name: "Kate", email: "yura.fila@gmail.com"), channel: ""),
-                          Streamer(user: User(name: "Linda", email: "yura.fila@gmail.com"), channel: ""),
-                          Streamer(user: User(name: "Alex", email: "yura.fila@gmail.com"), channel: ""),
-                          Streamer(user: User(name: "Aurora", email: "yura.fila@gmail.com"), channel: "")]
+        self.streamers = [Streamer(user: User(first: "Yura", email: "yura.fila@gmail.com"), channel: ""),
+                          Streamer(user: User(first: "Tom", email: "yura.fila@gmail.com"), channel: ""),
+                          Streamer(user: User(first: "Kate", email: "yura.fila@gmail.com"), channel: ""),
+                          Streamer(user: User(first: "Linda", email: "yura.fila@gmail.com"), channel: ""),
+                          Streamer(user: User(first: "Alex", email: "yura.fila@gmail.com"), channel: ""),
+                          Streamer(user: User(first: "Aurora", email: "yura.fila@gmail.com"), channel: "")]
         setupSubscription()
     }
     

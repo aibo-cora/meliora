@@ -14,11 +14,11 @@ struct Identity: View {
     
     var body: some View {
         HStack {
-            Image(systemName: "creditcard.fill")
+            Image(systemName: "touchid")
                 .font(.title)
             Spacer()
             VStack(alignment: .center) {
-                Text("\(user.name)")
+                Text("\(user.given)")
                 Text("\(user.email)")
                     .font(.footnote)
                     .lineLimit(1)
@@ -34,6 +34,6 @@ struct Identity: View {
 
 struct Identity_Previews: PreviewProvider {
     static var previews: some View {
-        Identity(user: User(name: "Yura", email: "yura.fila@gmail.com"))
+        Identity(user: User(first: "Yura", email: "yura.fila@gmail.com"))
     }
 }

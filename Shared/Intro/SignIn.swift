@@ -10,10 +10,11 @@ import AuthenticationServices
 import Joint
 
 struct SignIn: View {
-    let udKey = "Meliora.User.Auth"
-    var user: User
+    let udUserKey = "Meliora.User.Auth"
     
-    @Binding var authenticated: Bool
+    @EnvironmentObject var network: NetworkCom
+
+    var user: User
     
     var body: some View {
         VStack {
@@ -25,15 +26,8 @@ struct SignIn: View {
                 switch result {
                 case .success (let auth):
                     guard let credentials = auth.credential as? ASAuthorizationAppleIDCredential else { return }
-                    
-                    if let name = credentials.fullName?.formatted(), let email = credentials.email {
-                        user.update(name: name, email: email)
-                        SaveCredentials(identifier: credentials.user)
-                    } else {
-                        NSLog("The user has authorized this app before and is stored.")
-                    }
-                    
-                    authenticated = true
+
+                    SaveCredentials(credentials: credentials)
                 case .failure (let error):
                     print("Authorization failed: " + error.localizedDescription)
                 }
@@ -44,19 +38,37 @@ struct SignIn: View {
     }
     
     /// This should be saved in the keychain or external database to survive app deletion.
-    /// - Parameter identifier: Unique Apple auth ID
-    private func SaveCredentials(identifier: String) {
-        print(user.name, user.email, identifier)
-        
-        let data = try? JSONEncoder().encode(user)
-        UserDefaults.standard.set(data, forKey: udKey)
+    /// - Parameter credentials: Apple auth credentials
+    private func SaveCredentials(credentials: ASAuthorizationAppleIDCredential) {
+        if let given = credentials.fullName?.givenName, let family = credentials.fullName?.familyName, let email = credentials.email {
+            let user = User(first: given,
+                            last: family,
+                            email: email,
+                            appleID: credentials.user,
+                            rank: User.UserRank(id: 1, title: "basic"))
+            Task {
+                do {
+                    if let _ = try await network.create(user: user) {
+                        UserDefaults.standard.set(try JSONEncoder().encode(user), forKey: udUserKey)
+                        
+                        self.user.update(first: user.given, last: user.family, email: user.email, appleID: user.id, rank: User.UserRank(id: 1 ))
+                    }
+                } catch NetworkCom.NetworkErrors.database {
+                    print("Database operation could not be completed. Check database log.")
+                } catch NetworkCom.NetworkErrors.request {
+                    print("Bad request.")
+                }
+            }
+        } else {
+            // user info is in the database?
+        }
     }
 }
 
 #if DEBUG
 struct SignIn_Previews: PreviewProvider {
     static var previews: some View {
-        SignIn(user: User(), authenticated: .constant(false))
+        SignIn(user: User())
     }
 }
 #endif
