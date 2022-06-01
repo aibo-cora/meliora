@@ -45,6 +45,6 @@ struct Staging: View {
 
 struct Lobby_Previews: PreviewProvider {
     static var previews: some View {
-        Staging(user: User(name: "Yura", email: "yura.fila@gmail.com"), session: Session())
+        Staging(user: User(first: "Yura", email: "yura.fila@gmail.com"), session: Session())
     }
 }

@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */; };
 		98499605000A69408BE1052A /* Pods_Meliora__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */; };
-		DE5C6D9028416754002273F5 /* joint-spm in Frameworks */ = {isa = PBXBuildFile; productRef = DE5C6D8F28416754002273F5 /* joint-spm */; };
+		DE2B4FB928459CAB007A0BFA /* Joint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2B4FB828459CAB007A0BFA /* Joint.xcframework */; };
+		DE2B4FBA28459CAB007A0BFA /* Joint.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE2B4FB828459CAB007A0BFA /* Joint.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163B280E39CF008F1886 /* Tests_iOS.swift */; };
 		DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */; };
 		DE7A1648280E39CF008F1886 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1647280E39CF008F1886 /* Tests_macOS.swift */; };
@@ -60,6 +61,8 @@
 		DE7A16AE280E3A20008F1886 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1681280E3A20008F1886 /* View.swift */; };
 		DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
 		DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
+		DEB32E492845540D00C187B5 /* NetworkCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB32E482845540D00C187B5 /* NetworkCom.swift */; };
+		DEB32E4A2845540D00C187B5 /* NetworkCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB32E482845540D00C187B5 /* NetworkCom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +83,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DE4D3513280F4BA0000AF887 /* Embed Frameworks */ = {
+		DEB32E3828453C7F00C187B5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DE2B4FBA28459CAB007A0BFA /* Joint.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +101,7 @@
 		CE93DC729DC5B9F7B71D63D9 /* Pods-Meliora (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD65807BD7267580F9FCAC80 /* Pods-Meliora (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		DE2B4FB828459CAB007A0BFA /* Joint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Joint.xcframework; path = ../Frameworks/Joint/xcFramework/Joint.xcframework; sourceTree = "<group>"; };
 		DE5B82A4280E3BAF00FB71B6 /* Meliora (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Meliora (iOS).entitlements"; sourceTree = "<group>"; };
 		DE6B65D12821D18900056861 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE7A1623280E39CD008F1886 /* MelioraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelioraApp.swift; sourceTree = "<group>"; };
@@ -132,6 +137,7 @@
 		DE7A1681280E3A20008F1886 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DE7A1682280E3A20008F1886 /* CGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImage.swift; sourceTree = "<group>"; };
 		DE7A16B1280E3A7D008F1886 /* Meliora--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meliora--iOS--Info.plist"; sourceTree = "<group>"; };
+		DEB32E482845540D00C187B5 /* NetworkCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCom.swift; sourceTree = "<group>"; };
 		E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (iOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5C6D9028416754002273F5 /* joint-spm in Frameworks */,
+				DE2B4FB928459CAB007A0BFA /* Joint.xcframework in Frameworks */,
 				087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +349,7 @@
 		DE7A167B280E3A20008F1886 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				DEB32E482845540D00C187B5 /* NetworkCom.swift */,
 				DE7A166A280E3A20008F1886 /* Session.swift */,
 				DE7A167C280E3A20008F1886 /* AV */,
 				DE7A1680280E3A20008F1886 /* Extensions */,
@@ -372,6 +379,7 @@
 		DE7A16B2280E3A9D008F1886 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE2B4FB828459CAB007A0BFA /* Joint.xcframework */,
 				E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */,
 				CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */,
 			);
@@ -389,8 +397,8 @@
 				DE7A1626280E39CF008F1886 /* Sources */,
 				DE7A1627280E39CF008F1886 /* Frameworks */,
 				DE7A1628280E39CF008F1886 /* Resources */,
-				DE4D3513280F4BA0000AF887 /* Embed Frameworks */,
 				E02D4E944004190FE7DDC01B /* [CP] Embed Pods Frameworks */,
+				DEB32E3828453C7F00C187B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,7 +406,6 @@
 			);
 			name = "Meliora (iOS)";
 			packageProductDependencies = (
-				DE5C6D8F28416754002273F5 /* joint-spm */,
 			);
 			productName = "Meliora (iOS)";
 			productReference = DE7A162A280E39CF008F1886 /* Meliora.app */;
@@ -494,7 +501,6 @@
 			);
 			mainGroup = DE7A161D280E39CD008F1886;
 			packageReferences = (
-				DE5C6D8E28416754002273F5 /* XCRemoteSwiftPackageReference "joint-spm" */,
 			);
 			productRefGroup = DE7A162B280E39CF008F1886 /* Products */;
 			projectDirPath = "";
@@ -632,6 +638,7 @@
 				DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */,
 				DE7A164B280E39CF008F1886 /* MelioraApp.swift in Sources */,
 				DE7A16A9280E3A20008F1886 /* CameraError.swift in Sources */,
+				DEB32E492845540D00C187B5 /* NetworkCom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +668,7 @@
 				DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */,
 				DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */,
 				DE7A16AA280E3A20008F1886 /* CameraError.swift in Sources */,
+				DEB32E4A2845540D00C187B5 /* NetworkCom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,7 +845,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
@@ -878,7 +886,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
@@ -1078,25 +1086,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		DE5C6D8E28416754002273F5 /* XCRemoteSwiftPackageReference "joint-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:aibo-cora/joint-spm.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DE5C6D8F28416754002273F5 /* joint-spm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE5C6D8E28416754002273F5 /* XCRemoteSwiftPackageReference "joint-spm" */;
-			productName = "joint-spm";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE7A161E280E39CD008F1886 /* Project object */;
 }

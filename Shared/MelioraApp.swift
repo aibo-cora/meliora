@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import Joint
 
 @main
 struct MelioraApp: App {
+    @StateObject var network = NetworkCom()
+    
     var body: some Scene {
         WindowGroup {
             Intro()
+                .environmentObject(network)
         }
     }
 }

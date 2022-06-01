@@ -33,7 +33,7 @@ struct StreamerList: View {
                                     .scaleEffect(scale)
                                     .frame(width: 100, height: 150, alignment: .center)
                                 
-                                Text(streamers[index].name)
+                                Text(streamers[index].given)
                                     .fixedSize()
                                     .truncationMode(.tail)
                             }
