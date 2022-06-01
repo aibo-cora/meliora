@@ -15,7 +15,8 @@ struct Intro: View {
         if user.email.isEmpty {
             SignIn(user: user)
         } else {
-            Network(channel: "", user: user)
+            Network()
+                .environmentObject(user)
         }
     }
 }

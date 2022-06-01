@@ -9,8 +9,8 @@ import SwiftUI
 import Joint
 
 struct Staging: View {
-    var user: User
-    var session: Session
+    @EnvironmentObject var user: User
+    @EnvironmentObject var session: Session
     
     @StateObject private var feed = FrameViewModel()
     @State private var channel: String = ""
@@ -32,7 +32,7 @@ struct Staging: View {
             .navigationBarTitleDisplayMode(.inline)
             
             NavigationLink {
-                LiveFeed(session: session, streamer: Streamer(user: user, channel: channel), image: feed.frame)
+                LiveFeed(session: session, user: user, image: feed.frame)
                     .ignoresSafeArea()
             } label: {
                 Text("Start")
@@ -45,6 +45,6 @@ struct Staging: View {
 
 struct Lobby_Previews: PreviewProvider {
     static var previews: some View {
-        Staging(user: User(first: "Yura", email: "yura.fila@gmail.com"), session: Session())
+        Staging()
     }
 }

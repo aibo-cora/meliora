@@ -9,20 +9,16 @@ import SwiftUI
 import Joint
 
 struct StreamingControl: View {
-    @Binding
-    var status: SessionStatus
+    @State private var blink = false
     
-    @State
-    private var blink = false
-    
-    let session: JointSession?
-    let streamer: Streamer
+    @ObservedObject var session: Session
+    @ObservedObject var user: User
     
     var body: some View {
-        if status == .unknown {
+        if session.sessionStatus == .unknown {
             
         }
-        if status == .connecting {
+        if session.sessionStatus == .connecting {
             Text("Starting up session, please wait...")
                 .foregroundColor(.white)
                 .padding(.bottom, 50)
@@ -33,10 +29,12 @@ struct StreamingControl: View {
                         .repeatForever()) { blink.toggle() }
                 }
         }
-        if status == .connected {
+        if session.sessionStatus == .connected {
             Button(action: {
                 print(CameraManager.shared.streaming ? "Stopped streaming" : "Started streaming")
-                CameraManager.shared.streaming ? session?.stopSession(streamer: streamer) : session?.startSession(streamer: streamer)
+                
+                let streamer = Streamer(user: user, channel: user.id)
+                CameraManager.shared.streaming ? session.jointSession?.stopSession(streamer: streamer) : session.jointSession?.startSession(streamer: streamer)
                 CameraManager.shared.streaming.toggle()
             }) {
                 Image(systemName: CameraManager.shared.streaming ? "stop.fill" : "circle.fill")
@@ -48,7 +46,7 @@ struct StreamingControl: View {
                     .padding(.bottom, 40)
             }
         }
-        if status == .failed {
+        if session.sessionStatus == .failed {
             Text("Session failed, please restart...")
                 .foregroundColor(.white)
                 .padding(.bottom, 50)
@@ -64,6 +62,6 @@ struct StreamingControl: View {
 
 struct StreamButton_Previews: PreviewProvider {
     static var previews: some View {
-        StreamingControl(status: .constant(.unknown), session: nil, streamer: Streamer(user: User(), channel: ""))
+        StreamingControl(session: Session(), user: User())
     }
 }

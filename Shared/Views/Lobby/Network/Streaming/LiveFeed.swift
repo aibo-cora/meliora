@@ -10,16 +10,11 @@ import AVKit
 import Joint
 
 struct LiveFeed: View {
-    @State
-    var hasCameraPermission = false
+    @State var hasCameraPermission = false
+    @State var hasMicrophonePermission = false
     
-    @State
-    var hasMicrophonePermission = false
-    
-    @ObservedObject
-    var session: Session
-    
-    var streamer: Streamer
+    @ObservedObject var session: Session
+    @ObservedObject var user: User
     
     var image: CGImage?
     private let label = Text("Camera feed")
@@ -46,7 +41,7 @@ struct LiveFeed: View {
                             VStack {
                                 Spacer()
                                 
-                                StreamingControl(status: $session.sessionStatus, session: session.jointSession, streamer: streamer)
+                                StreamingControl(session: session, user: user)
                             }
                         }
                     } else {
@@ -64,6 +59,6 @@ struct LiveFeed: View {
 
 struct Streaming_Previews: PreviewProvider {
     static var previews: some View {
-        LiveFeed(session: Session(), streamer: Streamer(user: User(), channel: ""))
+        LiveFeed(session: Session(), user: User())
     }
 }
