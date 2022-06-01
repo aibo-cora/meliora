@@ -9,19 +9,19 @@ import SwiftUI
 import Joint
 
 struct Network: View {
-    let channel: String
-    let user: User
-    
     @StateObject var session = Session()
     
     var body: some View {
         NavigationView {
             VStack {
                 StreamerList(streamers: session.streamers, session: session)
+                    .environmentObject(session)
                     .navigationTitle("Network")
                     .toolbar {
                         ToolbarItem() {
-                            NavigationLink(destination: Staging(user: user, session: session)) {
+                            NavigationLink(destination:
+                                            Staging()
+                                                .environmentObject(session)) {
                                 HStack {
                                     Image(systemName: "video.fill")
                                 }
@@ -57,7 +57,7 @@ struct Network: View {
 struct Network_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Network(channel: "/video", user: User())
+            Network()
                 .previewInterfaceOrientation(.portrait)
         }
     }

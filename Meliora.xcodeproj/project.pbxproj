@@ -47,10 +47,6 @@
 		DE7A169C280E3A20008F1886 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1673280E3A20008F1886 /* SignIn.swift */; };
 		DE7A169D280E3A20008F1886 /* FrameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1675280E3A20008F1886 /* FrameViewModel.swift */; };
 		DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1675280E3A20008F1886 /* FrameViewModel.swift */; };
-		DE7A169F280E3A20008F1886 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1677280E3A20008F1886 /* Model.swift */; };
-		DE7A16A0280E3A20008F1886 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1677280E3A20008F1886 /* Model.swift */; };
-		DE7A16A1280E3A20008F1886 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1678280E3A20008F1886 /* Channel.swift */; };
-		DE7A16A2280E3A20008F1886 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1678280E3A20008F1886 /* Channel.swift */; };
 		DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167D280E3A20008F1886 /* FrameSupplier.swift */; };
 		DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167D280E3A20008F1886 /* FrameSupplier.swift */; };
 		DE7A16A9280E3A20008F1886 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A167E280E3A20008F1886 /* CameraError.swift */; };
@@ -129,8 +125,6 @@
 		DE7A1672280E3A20008F1886 /* Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		DE7A1673280E3A20008F1886 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		DE7A1675280E3A20008F1886 /* FrameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameViewModel.swift; sourceTree = "<group>"; };
-		DE7A1677280E3A20008F1886 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		DE7A1678280E3A20008F1886 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		DE7A167D280E3A20008F1886 /* FrameSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameSupplier.swift; sourceTree = "<group>"; };
 		DE7A167E280E3A20008F1886 /* CameraError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
 		DE7A167F280E3A20008F1886 /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
@@ -207,11 +201,11 @@
 		DE7A1622280E39CD008F1886 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DE7A1623280E39CD008F1886 /* MelioraApp.swift */,
 				DE7A1676280E3A20008F1886 /* Data Models */,
-				DE7A165F280E3A20008F1886 /* Intro */,
+				DE7A165F280E3A20008F1886 /* Views */,
 				DE7A167B280E3A20008F1886 /* Utility */,
 				DE7A1674280E3A20008F1886 /* View Models */,
-				DE7A1623280E39CD008F1886 /* MelioraApp.swift */,
 				DE7A1625280E39CF008F1886 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -254,15 +248,15 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		DE7A165F280E3A20008F1886 /* Intro */ = {
+		DE7A165F280E3A20008F1886 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE7A1660280E3A20008F1886 /* Settings */,
-				DE7A1662280E3A20008F1886 /* Lobby */,
 				DE7A1672280E3A20008F1886 /* Intro.swift */,
 				DE7A1673280E3A20008F1886 /* SignIn.swift */,
+				DE7A1662280E3A20008F1886 /* Lobby */,
+				DE7A1660280E3A20008F1886 /* Settings */,
 			);
-			path = Intro;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DE7A1660280E3A20008F1886 /* Settings */ = {
@@ -340,8 +334,6 @@
 		DE7A1676280E3A20008F1886 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				DE7A1677280E3A20008F1886 /* Model.swift */,
-				DE7A1678280E3A20008F1886 /* Channel.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -621,13 +613,11 @@
 				DE7A1697280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1683280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */,
-				DE7A16A1280E3A20008F1886 /* Channel.swift in Sources */,
 				DE7A169D280E3A20008F1886 /* FrameViewModel.swift in Sources */,
 				DE7A168F280E3A20008F1886 /* CameraPermission.swift in Sources */,
 				DE7A16AD280E3A20008F1886 /* View.swift in Sources */,
 				DE7A1699280E3A20008F1886 /* Intro.swift in Sources */,
 				DE7A16AB280E3A20008F1886 /* CameraManager.swift in Sources */,
-				DE7A169F280E3A20008F1886 /* Model.swift in Sources */,
 				DE7A1685280E3A20008F1886 /* Identity.swift in Sources */,
 				DE7A168B280E3A20008F1886 /* LiveFeed.swift in Sources */,
 				DE7A1687280E3A20008F1886 /* Watching.swift in Sources */,
@@ -651,13 +641,11 @@
 				DE7A1698280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1684280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */,
-				DE7A16A2280E3A20008F1886 /* Channel.swift in Sources */,
 				DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */,
 				DE7A1690280E3A20008F1886 /* CameraPermission.swift in Sources */,
 				DE7A16AE280E3A20008F1886 /* View.swift in Sources */,
 				DE7A169A280E3A20008F1886 /* Intro.swift in Sources */,
 				DE7A16AC280E3A20008F1886 /* CameraManager.swift in Sources */,
-				DE7A16A0280E3A20008F1886 /* Model.swift in Sources */,
 				DE7A1686280E3A20008F1886 /* Identity.swift in Sources */,
 				DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */,
 				DE7A1688280E3A20008F1886 /* Watching.swift in Sources */,
@@ -845,7 +833,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
@@ -886,7 +874,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
