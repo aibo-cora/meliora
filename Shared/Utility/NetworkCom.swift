@@ -17,12 +17,11 @@ final class NetworkCom: ObservableObject {
         guard let apiServerURL = URL(string: JointSession.apiServer + "/user/create") else { return nil }
         
         var request = URLRequest(url: apiServerURL)
-        let encoder = JSONEncoder()
         
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
-        request.httpBody = try encoder.encode(user)
+        request.httpBody = try JSONEncoder().encode(user)
         request.httpMethod = "POST"
         
         do {
