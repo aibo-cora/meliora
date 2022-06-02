@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */; };
 		98499605000A69408BE1052A /* Pods_Meliora__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */; };
-		DE2B4FB928459CAB007A0BFA /* Joint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2B4FB828459CAB007A0BFA /* Joint.xcframework */; };
-		DE2B4FBA28459CAB007A0BFA /* Joint.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE2B4FB828459CAB007A0BFA /* Joint.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B4FC42848F00A007A0BFA /* AppUser.swift */; };
+		DE2B4FCB28490290007A0BFA /* joint-spm in Frameworks */ = {isa = PBXBuildFile; productRef = DE2B4FCA28490290007A0BFA /* joint-spm */; };
 		DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163B280E39CF008F1886 /* Tests_iOS.swift */; };
 		DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */; };
 		DE7A1648280E39CF008F1886 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1647280E39CF008F1886 /* Tests_macOS.swift */; };
@@ -85,7 +85,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DE2B4FBA28459CAB007A0BFA /* Joint.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +96,7 @@
 		CE93DC729DC5B9F7B71D63D9 /* Pods-Meliora (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD65807BD7267580F9FCAC80 /* Pods-Meliora (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).debug.xcconfig"; sourceTree = "<group>"; };
-		DE2B4FB828459CAB007A0BFA /* Joint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Joint.xcframework; path = ../Frameworks/Joint/xcFramework/Joint.xcframework; sourceTree = "<group>"; };
+		DE2B4FC42848F00A007A0BFA /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		DE5B82A4280E3BAF00FB71B6 /* Meliora (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Meliora (iOS).entitlements"; sourceTree = "<group>"; };
 		DE6B65D12821D18900056861 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE7A1623280E39CD008F1886 /* MelioraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelioraApp.swift; sourceTree = "<group>"; };
@@ -141,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2B4FB928459CAB007A0BFA /* Joint.xcframework in Frameworks */,
+				DE2B4FCB28490290007A0BFA /* joint-spm in Frameworks */,
 				087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +333,7 @@
 		DE7A1676280E3A20008F1886 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				DE2B4FC42848F00A007A0BFA /* AppUser.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -371,7 +371,6 @@
 		DE7A16B2280E3A9D008F1886 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE2B4FB828459CAB007A0BFA /* Joint.xcframework */,
 				E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */,
 				CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */,
 			);
@@ -398,6 +397,7 @@
 			);
 			name = "Meliora (iOS)";
 			packageProductDependencies = (
+				DE2B4FCA28490290007A0BFA /* joint-spm */,
 			);
 			productName = "Meliora (iOS)";
 			productReference = DE7A162A280E39CF008F1886 /* Meliora.app */;
@@ -493,6 +493,7 @@
 			);
 			mainGroup = DE7A161D280E39CD008F1886;
 			packageReferences = (
+				DE2B4FC928490290007A0BFA /* XCRemoteSwiftPackageReference "joint-spm" */,
 			);
 			productRefGroup = DE7A162B280E39CF008F1886 /* Products */;
 			projectDirPath = "";
@@ -622,6 +623,7 @@
 				DE7A168B280E3A20008F1886 /* LiveFeed.swift in Sources */,
 				DE7A1687280E3A20008F1886 /* Watching.swift in Sources */,
 				DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */,
+				DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */,
 				DE7A1691280E3A20008F1886 /* MicrophonePermission.swift in Sources */,
 				DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */,
 				DE7A1693280E3A20008F1886 /* StreamingControl.swift in Sources */,
@@ -1074,6 +1076,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE2B4FC928490290007A0BFA /* XCRemoteSwiftPackageReference "joint-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:aibo-cora/joint-spm.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE2B4FCA28490290007A0BFA /* joint-spm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2B4FC928490290007A0BFA /* XCRemoteSwiftPackageReference "joint-spm" */;
+			productName = "joint-spm";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE7A161E280E39CD008F1886 /* Project object */;
 }

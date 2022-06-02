@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "joint-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:aibo-cora/joint-spm.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0c79756074d2ebc6a260767749ab3644dc9e6f2d"
+      }
+    }
+  ],
+  "version" : 2
+}

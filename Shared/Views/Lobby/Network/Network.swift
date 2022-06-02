@@ -10,7 +10,7 @@ import Joint
 
 struct Network: View {
     @StateObject var session = Session()
-    @EnvironmentObject var user: User
+    @EnvironmentObject var user: AppUser
     
     var body: some View {
         NavigationView {

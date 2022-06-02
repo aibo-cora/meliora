@@ -9,7 +9,7 @@ import SwiftUI
 import Joint
 
 struct Staging: View {
-    @EnvironmentObject var user: User
+    @EnvironmentObject var user: AppUser
     @EnvironmentObject var session: Session
     
     @StateObject private var feed = FrameViewModel()

@@ -22,4 +22,4 @@ Add these to your pod file.
         - Sync with DB on app launch.<br>
 - Selecting a streamer from the list should display a preview of the stream and show streamer's description.<br>
 <br><br>
-Joint version: <code>1.0.9</code>
+Joint version: <code>1.0.10</code>
