@@ -10,8 +10,6 @@ import AuthenticationServices
 import Joint
 
 struct SignIn: View {
-    let udUserKey = "Meliora.User.Auth"
-    
     @EnvironmentObject var network: NetworkCom
 
     var user: User
@@ -44,11 +42,11 @@ struct SignIn: View {
                         last: credentials.fullName?.familyName ?? "",
                         email: credentials.email ?? "",
                         appleID: credentials.user,
-                        rank: User.UserRank(id: 1, title: "basic"))
+                        rank: User.Rank(id: 1, title: "basic"))
         Task {
             do {
                 if let response = try await network.create(user: user) {
-                    UserDefaults.standard.set(response, forKey: udUserKey)
+                    UserDefaults.standard.set(response, forKey: AppUser.persistenceKey)
 
                     let persisted = try JSONDecoder().decode(User.self, from: response)
                     self.user.update(first: persisted.given,

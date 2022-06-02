@@ -10,6 +10,7 @@ import Joint
 
 struct Network: View {
     @StateObject var session = Session()
+    @EnvironmentObject var user: AppUser
     
     var body: some View {
         NavigationView {
@@ -30,6 +31,7 @@ struct Network: View {
                     }
                     .task {
                         let _ = await session.establishConnection()
+                        // 
                     }
                 
                 Spacer()

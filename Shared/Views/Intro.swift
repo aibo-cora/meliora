@@ -9,7 +9,7 @@ import SwiftUI
 import Joint
 
 struct Intro: View {
-    @StateObject var user = User()
+    @StateObject var user = AppUser()
     
     var body: some View {
         if user.email.isEmpty {
