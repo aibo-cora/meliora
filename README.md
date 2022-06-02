@@ -16,9 +16,10 @@ Add these to your pod file.
 </pre>
 
 <h4>Known Issues</h4>
-- Sign in with Apple is hadcoded.<br>
-    <t> Resolution:
-    <t>     <t>need to setup a dedicated container running postgres on AWS.<br>
+- Starting stream does not toggle the red button.<br>
+- If the API server is down, users signing in won't be in the database.<br>
+    Resolution:<br>
+        - Sync with DB on app launch.<br>
 - Selecting a streamer from the list should display a preview of the stream and show streamer's description.<br>
 <br><br>
-Joint version: <code>1.0.8</code>
+Joint version: <code>1.0.9</code>
