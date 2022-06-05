@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Joint
 
 struct Network: View {
     @StateObject var session = Session()

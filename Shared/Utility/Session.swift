@@ -7,7 +7,6 @@
 
 import Foundation
 import Joint
-import Combine
 
 public class Session: NSObject, ObservableObject {
     let broker = Broker(ip: "ec4735464b1046269ee2cea58d53b355.s1.eu.hivemq.cloud",
