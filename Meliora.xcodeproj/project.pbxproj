@@ -56,11 +56,9 @@
 		DE7A16AE280E3A20008F1886 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1681280E3A20008F1886 /* View.swift */; };
 		DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
 		DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1682280E3A20008F1886 /* CGImage.swift */; };
-		DEA44B5D284A65A000729989 /* MissionControl1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B5C284A65A000729989 /* MissionControl1.swift */; };
-		DEA44B5E284A65A000729989 /* MissionControl1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B5C284A65A000729989 /* MissionControl1.swift */; };
 		DEA44B64284D14A500729989 /* joint-spm in Frameworks */ = {isa = PBXBuildFile; productRef = DEA44B63284D14A500729989 /* joint-spm */; };
-		DEA44B66284D23AF00729989 /* MissionControl2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B65284D23AF00729989 /* MissionControl2.swift */; };
-		DEA44B67284D23AF00729989 /* MissionControl2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B65284D23AF00729989 /* MissionControl2.swift */; };
+		DEA44B66284D23AF00729989 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B65284D23AF00729989 /* Onboarding.swift */; };
+		DEA44B67284D23AF00729989 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B65284D23AF00729989 /* Onboarding.swift */; };
 		DEA44B6A284D2EFE00729989 /* SpecialElite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */; };
 		DEA44B6B284D2EFE00729989 /* SpecialElite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */; };
 		DEB32E492845540D00C187B5 /* NetworkCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB32E482845540D00C187B5 /* NetworkCom.swift */; };
@@ -136,8 +134,7 @@
 		DE7A1681280E3A20008F1886 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DE7A1682280E3A20008F1886 /* CGImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImage.swift; sourceTree = "<group>"; };
 		DE7A16B1280E3A7D008F1886 /* Meliora--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meliora--iOS--Info.plist"; sourceTree = "<group>"; };
-		DEA44B5C284A65A000729989 /* MissionControl1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionControl1.swift; sourceTree = "<group>"; };
-		DEA44B65284D23AF00729989 /* MissionControl2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionControl2.swift; sourceTree = "<group>"; };
+		DEA44B65284D23AF00729989 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpecialElite-Regular.ttf"; sourceTree = "<group>"; };
 		DEB32E482845540D00C187B5 /* NetworkCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCom.swift; sourceTree = "<group>"; };
 		E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +185,14 @@
 				CE93DC729DC5B9F7B71D63D9 /* Pods-Meliora (macOS).release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE152DC2284EB37500F5E0ED /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DEA44B65284D23AF00729989 /* Onboarding.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		DE7A161D280E39CD008F1886 = {
@@ -279,9 +284,8 @@
 		DE7A1662280E3A20008F1886 /* Lobby */ = {
 			isa = PBXGroup;
 			children = (
+				DE152DC2284EB37500F5E0ED /* Onboarding */,
 				DE7A1664280E3A20008F1886 /* Network */,
-				DEA44B5C284A65A000729989 /* MissionControl1.swift */,
-				DEA44B65284D23AF00729989 /* MissionControl2.swift */,
 			);
 			path = Lobby;
 			sourceTree = "<group>";
@@ -640,11 +644,10 @@
 				DE7A168F280E3A20008F1886 /* CameraPermission.swift in Sources */,
 				DE7A16AD280E3A20008F1886 /* View.swift in Sources */,
 				DE7A1699280E3A20008F1886 /* Intro.swift in Sources */,
-				DEA44B5D284A65A000729989 /* MissionControl1.swift in Sources */,
 				DE7A16AB280E3A20008F1886 /* CameraManager.swift in Sources */,
 				DE7A1685280E3A20008F1886 /* Identity.swift in Sources */,
 				DE7A168B280E3A20008F1886 /* LiveFeed.swift in Sources */,
-				DEA44B66284D23AF00729989 /* MissionControl2.swift in Sources */,
+				DEA44B66284D23AF00729989 /* Onboarding.swift in Sources */,
 				DE7A1687280E3A20008F1886 /* Watching.swift in Sources */,
 				DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */,
 				DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */,
@@ -670,10 +673,9 @@
 				DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */,
 				DE7A1690280E3A20008F1886 /* CameraPermission.swift in Sources */,
 				DE7A16AE280E3A20008F1886 /* View.swift in Sources */,
-				DEA44B5E284A65A000729989 /* MissionControl1.swift in Sources */,
 				DE7A169A280E3A20008F1886 /* Intro.swift in Sources */,
 				DE7A16AC280E3A20008F1886 /* CameraManager.swift in Sources */,
-				DEA44B67284D23AF00729989 /* MissionControl2.swift in Sources */,
+				DEA44B67284D23AF00729989 /* Onboarding.swift in Sources */,
 				DE7A1686280E3A20008F1886 /* Identity.swift in Sources */,
 				DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */,
 				DE7A1688280E3A20008F1886 /* Watching.swift in Sources */,
