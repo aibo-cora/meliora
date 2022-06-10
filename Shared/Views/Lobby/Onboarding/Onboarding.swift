@@ -26,18 +26,22 @@ struct Onboarding: View {
                 
                 Spacer()
                 VStack {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .center, spacing: 10) {
-                            ForEach(model.controls, id: \.id) { control in
-                                VStack {
-                                    control
-                                        .environmentObject(model)
+                    ScrollViewReader { reader in
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(alignment: .center, spacing: 10) {
+                                ForEach(Array(model.controls.enumerated()), id: \.element) { index, control in
+                                    VStack {
+                                        control
+                                            .environmentObject(model)
+                                            .id(index)
+                                    }
                                 }
                             }
                         }
+                        .padding(.bottom, 50)
                     }
-                    .padding(.bottom, 50)
                 }
+                
                 NavigationLink {
                     
                 } label: {
@@ -58,6 +62,7 @@ struct Onboarding: View {
                     + "In addition, the app becomes aware of your preferences based on your browing history. "),
             Control(name: "GO LIVE", description: ""),
             Control(name: "COMMS", description: ""),
+            Control(name: "FOR YOU", description: ""),
             Control(name: "SETTINGS", description: "")
         ]
     }
@@ -73,7 +78,11 @@ struct Onboarding: View {
         }
     }
     
-    struct Control: View, Identifiable {
+    struct Control: View, Identifiable, Hashable {
+        static func == (lhs: Onboarding.Control, rhs: Onboarding.Control) -> Bool {
+            lhs.id == rhs.id
+        }
+        
         let id = UUID()
         let name: String
         let description: String
@@ -95,6 +104,10 @@ struct Onboarding: View {
                 }
                 .buttonStyle(GrowingButton())
             }
+        }
+        
+        func hash(into hasher: inout Hasher) {
+            
         }
         
         struct GrowingButton: ButtonStyle {
