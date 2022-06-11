@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Network: View {
+struct WatchVideos: View {
     @StateObject var session = Session()
     @EnvironmentObject var user: AppUser
     
@@ -58,7 +58,7 @@ struct Network: View {
 struct Network_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Network()
+            WatchVideos()
                 .previewInterfaceOrientation(.portrait)
         }
     }

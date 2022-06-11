@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		087A4A103FAAE9FE6E0792E1 /* Pods_Meliora__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */; };
 		98499605000A69408BE1052A /* Pods_Meliora__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */; };
+		DE152E462855231900F5E0ED /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE152E452855231900F5E0ED /* MainMenu.swift */; };
+		DE152E472855231900F5E0ED /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE152E452855231900F5E0ED /* MainMenu.swift */; };
 		DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B4FC42848F00A007A0BFA /* AppUser.swift */; };
 		DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163B280E39CF008F1886 /* Tests_iOS.swift */; };
 		DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */; };
@@ -24,8 +26,8 @@
 		DE7A1686280E3A20008F1886 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1663280E3A20008F1886 /* Identity.swift */; };
 		DE7A1687280E3A20008F1886 /* Watching.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1666280E3A20008F1886 /* Watching.swift */; };
 		DE7A1688280E3A20008F1886 /* Watching.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1666280E3A20008F1886 /* Watching.swift */; };
-		DE7A1689280E3A20008F1886 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1667280E3A20008F1886 /* Network.swift */; };
-		DE7A168A280E3A20008F1886 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1667280E3A20008F1886 /* Network.swift */; };
+		DE7A1689280E3A20008F1886 /* WatchVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1667280E3A20008F1886 /* WatchVideos.swift */; };
+		DE7A168A280E3A20008F1886 /* WatchVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1667280E3A20008F1886 /* WatchVideos.swift */; };
 		DE7A168B280E3A20008F1886 /* LiveFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1669280E3A20008F1886 /* LiveFeed.swift */; };
 		DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1669280E3A20008F1886 /* LiveFeed.swift */; };
 		DE7A168D280E3A20008F1886 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166A280E3A20008F1886 /* Session.swift */; };
@@ -100,6 +102,7 @@
 		CE93DC729DC5B9F7B71D63D9 /* Pods-Meliora (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		CF0781F7A32E85D2184D8176 /* Pods_Meliora__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD65807BD7267580F9FCAC80 /* Pods-Meliora (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		DE152E452855231900F5E0ED /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		DE2B4FC42848F00A007A0BFA /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		DE5B82A4280E3BAF00FB71B6 /* Meliora (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Meliora (iOS).entitlements"; sourceTree = "<group>"; };
 		DE6B65D12821D18900056861 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -117,7 +120,7 @@
 		DE7A1661280E3A20008F1886 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DE7A1663280E3A20008F1886 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		DE7A1666280E3A20008F1886 /* Watching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watching.swift; sourceTree = "<group>"; };
-		DE7A1667280E3A20008F1886 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DE7A1667280E3A20008F1886 /* WatchVideos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchVideos.swift; sourceTree = "<group>"; };
 		DE7A1669280E3A20008F1886 /* LiveFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveFeed.swift; sourceTree = "<group>"; };
 		DE7A166A280E3A20008F1886 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		DE7A166C280E3A20008F1886 /* CameraPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermission.swift; sourceTree = "<group>"; };
@@ -267,7 +270,7 @@
 			children = (
 				DE7A1672280E3A20008F1886 /* Intro.swift */,
 				DE7A1673280E3A20008F1886 /* SignIn.swift */,
-				DE7A1662280E3A20008F1886 /* Lobby */,
+				DE7A1662280E3A20008F1886 /* MainMenu */,
 				DE7A1660280E3A20008F1886 /* Settings */,
 			);
 			path = Views;
@@ -281,20 +284,21 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		DE7A1662280E3A20008F1886 /* Lobby */ = {
+		DE7A1662280E3A20008F1886 /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
 				DE152DC2284EB37500F5E0ED /* Onboarding */,
+				DE152E452855231900F5E0ED /* MainMenu.swift */,
 				DE7A1664280E3A20008F1886 /* Network */,
 			);
-			path = Lobby;
+			path = MainMenu;
 			sourceTree = "<group>";
 		};
 		DE7A1664280E3A20008F1886 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				DE7A1663280E3A20008F1886 /* Identity.swift */,
-				DE7A1667280E3A20008F1886 /* Network.swift */,
+				DE7A1667280E3A20008F1886 /* WatchVideos.swift */,
 				DE7A1670280E3A20008F1886 /* StreamerList.swift */,
 				DE7A1665280E3A20008F1886 /* Watching */,
 				DE7A1668280E3A20008F1886 /* Streaming */,
@@ -636,7 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7A168D280E3A20008F1886 /* Session.swift in Sources */,
-				DE7A1689280E3A20008F1886 /* Network.swift in Sources */,
+				DE7A1689280E3A20008F1886 /* WatchVideos.swift in Sources */,
 				DE7A1697280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1683280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */,
@@ -654,6 +658,7 @@
 				DE7A1691280E3A20008F1886 /* MicrophonePermission.swift in Sources */,
 				DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */,
 				DE7A1693280E3A20008F1886 /* StreamingControl.swift in Sources */,
+				DE152E462855231900F5E0ED /* MainMenu.swift in Sources */,
 				DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */,
 				DE7A164B280E39CF008F1886 /* MelioraApp.swift in Sources */,
 				DE7A16A9280E3A20008F1886 /* CameraError.swift in Sources */,
@@ -666,7 +671,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7A168E280E3A20008F1886 /* Session.swift in Sources */,
-				DE7A168A280E3A20008F1886 /* Network.swift in Sources */,
+				DE7A168A280E3A20008F1886 /* WatchVideos.swift in Sources */,
 				DE7A1698280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1684280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */,
@@ -677,6 +682,7 @@
 				DE7A16AC280E3A20008F1886 /* CameraManager.swift in Sources */,
 				DEA44B67284D23AF00729989 /* Onboarding.swift in Sources */,
 				DE7A1686280E3A20008F1886 /* Identity.swift in Sources */,
+				DE152E472855231900F5E0ED /* MainMenu.swift in Sources */,
 				DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */,
 				DE7A1688280E3A20008F1886 /* Watching.swift in Sources */,
 				DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */,

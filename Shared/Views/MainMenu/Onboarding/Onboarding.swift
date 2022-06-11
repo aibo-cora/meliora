@@ -10,9 +10,12 @@ import SwiftUI
 /// Onboarding
 struct Onboarding: View {
     @StateObject var model = ControlModel()
+    @AppStorage("hasCompletedOnboarding") var hasCompletedOnboarding: Bool = false
     
     var body: some View {
-        NavigationView {
+        if hasCompletedOnboarding {
+            WatchVideos()
+        } else {
             VStack {
                 HStack(alignment: .center, spacing: 20, content: {
                     Image(systemName: "face.smiling")
@@ -22,7 +25,7 @@ struct Onboarding: View {
                 })
                 Spacer()
                 
-                ControlDescription(control: model.controls[model.selection])
+                ControlDescription(control: model.selection)
                 
                 Spacer()
                 VStack {
@@ -42,8 +45,8 @@ struct Onboarding: View {
                     }
                 }
                 
-                NavigationLink {
-                    
+                Button {
+                    hasCompletedOnboarding.toggle()
                 } label: {
                     Image(systemName: "hand.thumbsup")
                         .foregroundColor(.black)
@@ -55,15 +58,15 @@ struct Onboarding: View {
     }
     
     class ControlModel: ObservableObject {
-        @Published var selection = 0
+        @Published var selection: Control = Control(name: "", description: "")
         
         let controls = [
             Control(name: "WATCH", description: "Watch videos based on your interests." + "\n\n"
                     + "In addition, the app becomes aware of your preferences based on your browing history. "),
-            Control(name: "GO LIVE", description: ""),
-            Control(name: "COMMS", description: ""),
-            Control(name: "FOR YOU", description: ""),
-            Control(name: "SETTINGS", description: "")
+            Control(name: "GO LIVE", description: "Make the world richer with a story."),
+            Control(name: "COMMS", description: "Connect with other storytellers and audiences."),
+            Control(name: "FOR YOU", description: "Customize your content."),
+            Control(name: "SETTINGS", description: "Configure application settings and read about the app and the team that made it.")
         ]
     }
     
@@ -88,13 +91,14 @@ struct Onboarding: View {
         let description: String
         
         @EnvironmentObject var model: ControlModel
+        @State private var selected: Bool = false
         
         var body: some View {
             VStack {
                 Button {
                     for index in 0..<model.controls.count {
                         if model.controls[index].id == id {
-                            model.selection = index
+                            model.selection = self
                         }
                     }
                 } label: {
@@ -102,6 +106,7 @@ struct Onboarding: View {
                         .font(.custom("SpecialElite-Regular", size: 16))
                         
                 }
+                .foregroundColor(model.selection == self ? .blue : .black)
                 .buttonStyle(GrowingButton())
             }
         }

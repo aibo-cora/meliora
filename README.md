@@ -21,7 +21,10 @@ The purpose of this project is to bring developers, designers, sponsors, investo
     </ul>
  <li> Oracle </li> 
     <ul> 
-        <li> Analyze and tag each video for CC filtering </li>
+        <li> Video classification </li>
+            <ul>
+                <li> Analyze and tag each video for CC filtering </li>
+            </ul>
     </ul> 
 </ol>  
 
