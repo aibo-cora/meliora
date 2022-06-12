@@ -10,11 +10,12 @@ import Joint
 
 struct StreamingControl: View {
     @State private var blink = false
+    @State private var streaming = false
     
     @ObservedObject var session: Session
     @ObservedObject var user: User
     
-    var body: some View {
+    @ViewBuilder var body: some View {
         if session.sessionStatus == .unknown {
             
         }
@@ -31,19 +32,17 @@ struct StreamingControl: View {
         }
         if session.sessionStatus == .connected {
             Button(action: {
-                print(CameraManager.shared.streaming ? "Stopped streaming" : "Started streaming")
+                print(streaming ? "Stopped streaming" : "Started streaming")
                 
                 let streamer = Streamer(user: user, channel: user.id)
-                CameraManager.shared.streaming ? session.jointSession?.stopSession(streamer: streamer) : session.jointSession?.startSession(streamer: streamer)
-                CameraManager.shared.streaming.toggle()
+                streaming ? session.jointSession?.stopSession(streamer: streamer) : session.jointSession?.startSession(streamer: streamer)
+                streaming.toggle()
             }) {
-                Image(systemName: CameraManager.shared.streaming ? "stop.fill" : "circle.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 75, height: 75)
-                    .clipped()
-                    .foregroundColor(.red)
-                    .padding(.bottom, 40)
+                if self.streaming {
+                    BlinkingLiveButton()
+                } else {
+                    StartLiveStreamButton()
+                }
             }
         }
         if session.sessionStatus == .failed {
