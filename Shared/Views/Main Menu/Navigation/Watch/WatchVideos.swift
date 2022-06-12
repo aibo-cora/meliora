@@ -8,30 +8,13 @@
 import SwiftUI
 
 struct WatchVideos: View {
-    @StateObject var session = Session()
-    @EnvironmentObject var user: AppUser
+    @ObservedObject var session: Session
+    @ObservedObject var user: AppUser
     
     var body: some View {
         NavigationView {
             VStack {
                 StreamerList(streamers: session.streamers, session: session)
-                    .environmentObject(session)
-                    .navigationTitle("Network")
-                    .toolbar {
-                        ToolbarItem() {
-                            NavigationLink(destination:
-                                            Staging()
-                                                .environmentObject(session)) {
-                                HStack {
-                                    Image(systemName: "video.fill")
-                                }
-                            }
-                        }
-                    }
-                    .task {
-                        let _ = await session.establishConnection()
-                        // 
-                    }
                 
                 Spacer()
                 
@@ -58,7 +41,7 @@ struct WatchVideos: View {
 struct Network_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            WatchVideos()
+            WatchVideos(session: Session(), user: AppUser())
                 .previewInterfaceOrientation(.portrait)
         }
     }

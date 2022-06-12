@@ -19,8 +19,7 @@ struct LiveFeed: View {
     var image: CGImage?
     private let label = Text("Camera feed")
     
-    @ViewBuilder
-    var body: some View {
+    @ViewBuilder var body: some View {
         VStack {
             if hasCameraPermission {
                 if hasMicrophonePermission {

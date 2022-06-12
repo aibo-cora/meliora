@@ -15,8 +15,7 @@ struct Intro: View {
         if user.email.isEmpty {
             SignIn(user: user)
         } else {
-            Onboarding()
-                .environmentObject(user)
+            Onboarding(user: user)
         }
     }
 }

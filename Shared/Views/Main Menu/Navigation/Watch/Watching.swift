@@ -11,14 +11,14 @@ import AVKit
 
 struct Watching: View {
     let streamer: Streamer
-    let session: Session?
+    let session: Session
     
     @State private var player = AVQueuePlayer()
     
     var body: some View {
         CustomVideoPlayer(player: player)
             .onAppear() {
-                session?.jointSession?.configurePlayer(watching: streamer, using: player)
+                session.jointSession?.configurePlayer(watching: streamer, using: player)
                 player.play()
             }
             .onDisappear() {

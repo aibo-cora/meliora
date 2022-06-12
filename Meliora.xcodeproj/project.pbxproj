@@ -63,6 +63,12 @@
 		DEA44B67284D23AF00729989 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B65284D23AF00729989 /* Onboarding.swift */; };
 		DEA44B6A284D2EFE00729989 /* SpecialElite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */; };
 		DEA44B6B284D2EFE00729989 /* SpecialElite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */; };
+		DEB0D0F428564F100081F957 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F328564F100081F957 /* Notifications.swift */; };
+		DEB0D0F528564F100081F957 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F328564F100081F957 /* Notifications.swift */; };
+		DEB0D0F928564FD90081F957 /* ContentManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F828564FD90081F957 /* ContentManagement.swift */; };
+		DEB0D0FA28564FD90081F957 /* ContentManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F828564FD90081F957 /* ContentManagement.swift */; };
+		DEB0D0FD2856501C0081F957 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0FC2856501C0081F957 /* AppSettings.swift */; };
+		DEB0D0FE2856501C0081F957 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0FC2856501C0081F957 /* AppSettings.swift */; };
 		DEB32E492845540D00C187B5 /* NetworkCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB32E482845540D00C187B5 /* NetworkCom.swift */; };
 		DEB32E4A2845540D00C187B5 /* NetworkCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB32E482845540D00C187B5 /* NetworkCom.swift */; };
 /* End PBXBuildFile section */
@@ -139,6 +145,9 @@
 		DE7A16B1280E3A7D008F1886 /* Meliora--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meliora--iOS--Info.plist"; sourceTree = "<group>"; };
 		DEA44B65284D23AF00729989 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpecialElite-Regular.ttf"; sourceTree = "<group>"; };
+		DEB0D0F328564F100081F957 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		DEB0D0F828564FD90081F957 /* ContentManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManagement.swift; sourceTree = "<group>"; };
+		DEB0D0FC2856501C0081F957 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		DEB32E482845540D00C187B5 /* NetworkCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCom.swift; sourceTree = "<group>"; };
 		E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (iOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS).release.xcconfig"; sourceTree = "<group>"; };
@@ -270,8 +279,9 @@
 			children = (
 				DE7A1672280E3A20008F1886 /* Intro.swift */,
 				DE7A1673280E3A20008F1886 /* SignIn.swift */,
-				DE7A1662280E3A20008F1886 /* MainMenu */,
+				DE7A1662280E3A20008F1886 /* Main Menu */,
 				DE7A1660280E3A20008F1886 /* Settings */,
+				DE7A166B280E3A20008F1886 /* Permissions */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,45 +294,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		DE7A1662280E3A20008F1886 /* MainMenu */ = {
+		DE7A1662280E3A20008F1886 /* Main Menu */ = {
 			isa = PBXGroup;
 			children = (
 				DE152DC2284EB37500F5E0ED /* Onboarding */,
 				DE152E452855231900F5E0ED /* MainMenu.swift */,
-				DE7A1664280E3A20008F1886 /* Network */,
+				DEB0D0EE285649C90081F957 /* Navigation */,
 			);
-			path = MainMenu;
-			sourceTree = "<group>";
-		};
-		DE7A1664280E3A20008F1886 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				DE7A1663280E3A20008F1886 /* Identity.swift */,
-				DE7A1667280E3A20008F1886 /* WatchVideos.swift */,
-				DE7A1670280E3A20008F1886 /* StreamerList.swift */,
-				DE7A1665280E3A20008F1886 /* Watching */,
-				DE7A1668280E3A20008F1886 /* Streaming */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		DE7A1665280E3A20008F1886 /* Watching */ = {
-			isa = PBXGroup;
-			children = (
-				DE7A1666280E3A20008F1886 /* Watching.swift */,
-			);
-			path = Watching;
-			sourceTree = "<group>";
-		};
-		DE7A1668280E3A20008F1886 /* Streaming */ = {
-			isa = PBXGroup;
-			children = (
-				DE7A1671280E3A20008F1886 /* Staging.swift */,
-				DE7A1669280E3A20008F1886 /* LiveFeed.swift */,
-				DE7A166B280E3A20008F1886 /* Permissions */,
-				DE7A166E280E3A20008F1886 /* Controls */,
-			);
-			path = Streaming;
+			path = "Main Menu";
 			sourceTree = "<group>";
 		};
 		DE7A166B280E3A20008F1886 /* Permissions */ = {
@@ -332,14 +311,6 @@
 				DE7A166D280E3A20008F1886 /* MicrophonePermission.swift */,
 			);
 			path = Permissions;
-			sourceTree = "<group>";
-		};
-		DE7A166E280E3A20008F1886 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				DE7A166F280E3A20008F1886 /* StreamingControl.swift */,
-			);
-			path = Controls;
 			sourceTree = "<group>";
 		};
 		DE7A1674280E3A20008F1886 /* View Models */ = {
@@ -403,6 +374,71 @@
 				DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DEB0D0EE285649C90081F957 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DEB0D0FB28564FF00081F957 /* Settings */,
+				DEB0D0F728564F5C0081F957 /* For You */,
+				DEB0D0F228564EB00081F957 /* Comm */,
+				DEB0D0F028564A320081F957 /* Go Live */,
+				DEB0D0EF28564A070081F957 /* Watch */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DEB0D0EF28564A070081F957 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1670280E3A20008F1886 /* StreamerList.swift */,
+				DE7A1667280E3A20008F1886 /* WatchVideos.swift */,
+				DE7A1666280E3A20008F1886 /* Watching.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		DEB0D0F028564A320081F957 /* Go Live */ = {
+			isa = PBXGroup;
+			children = (
+				DEB0D0F128564A670081F957 /* UI */,
+				DE7A1671280E3A20008F1886 /* Staging.swift */,
+				DE7A1669280E3A20008F1886 /* LiveFeed.swift */,
+			);
+			path = "Go Live";
+			sourceTree = "<group>";
+		};
+		DEB0D0F128564A670081F957 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A1663280E3A20008F1886 /* Identity.swift */,
+				DE7A166F280E3A20008F1886 /* StreamingControl.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DEB0D0F228564EB00081F957 /* Comm */ = {
+			isa = PBXGroup;
+			children = (
+				DEB0D0F328564F100081F957 /* Notifications.swift */,
+			);
+			path = Comm;
+			sourceTree = "<group>";
+		};
+		DEB0D0F728564F5C0081F957 /* For You */ = {
+			isa = PBXGroup;
+			children = (
+				DEB0D0F828564FD90081F957 /* ContentManagement.swift */,
+			);
+			path = "For You";
+			sourceTree = "<group>";
+		};
+		DEB0D0FB28564FF00081F957 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DEB0D0FC2856501C0081F957 /* AppSettings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -639,6 +675,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB0D0F928564FD90081F957 /* ContentManagement.swift in Sources */,
 				DE7A168D280E3A20008F1886 /* Session.swift in Sources */,
 				DE7A1689280E3A20008F1886 /* WatchVideos.swift in Sources */,
 				DE7A1697280E3A20008F1886 /* Staging.swift in Sources */,
@@ -654,12 +691,14 @@
 				DEA44B66284D23AF00729989 /* Onboarding.swift in Sources */,
 				DE7A1687280E3A20008F1886 /* Watching.swift in Sources */,
 				DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */,
+				DEB0D0F428564F100081F957 /* Notifications.swift in Sources */,
 				DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */,
 				DE7A1691280E3A20008F1886 /* MicrophonePermission.swift in Sources */,
 				DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */,
 				DE7A1693280E3A20008F1886 /* StreamingControl.swift in Sources */,
 				DE152E462855231900F5E0ED /* MainMenu.swift in Sources */,
 				DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */,
+				DEB0D0FD2856501C0081F957 /* AppSettings.swift in Sources */,
 				DE7A164B280E39CF008F1886 /* MelioraApp.swift in Sources */,
 				DE7A16A9280E3A20008F1886 /* CameraError.swift in Sources */,
 				DEB32E492845540D00C187B5 /* NetworkCom.swift in Sources */,
@@ -670,6 +709,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB0D0FE2856501C0081F957 /* AppSettings.swift in Sources */,
+				DEB0D0F528564F100081F957 /* Notifications.swift in Sources */,
 				DE7A168E280E3A20008F1886 /* Session.swift in Sources */,
 				DE7A168A280E3A20008F1886 /* WatchVideos.swift in Sources */,
 				DE7A1698280E3A20008F1886 /* Staging.swift in Sources */,
@@ -685,6 +726,7 @@
 				DE152E472855231900F5E0ED /* MainMenu.swift in Sources */,
 				DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */,
 				DE7A1688280E3A20008F1886 /* Watching.swift in Sources */,
+				DEB0D0FA28564FD90081F957 /* ContentManagement.swift in Sources */,
 				DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */,
 				DE7A1692280E3A20008F1886 /* MicrophonePermission.swift in Sources */,
 				DE7A169C280E3A20008F1886 /* SignIn.swift in Sources */,

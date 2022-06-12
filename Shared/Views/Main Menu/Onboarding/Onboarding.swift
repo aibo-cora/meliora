@@ -10,11 +10,13 @@ import SwiftUI
 /// Onboarding
 struct Onboarding: View {
     @StateObject var model = ControlModel()
-    @AppStorage("hasCompletedOnboarding") var hasCompletedOnboarding: Bool = false
+    @AppStorage("hasCompletedOnboarding") var hasCompletedOnboarding: Bool = true
+    
+    let user: AppUser
     
     var body: some View {
         if hasCompletedOnboarding {
-            WatchVideos()
+            MainMenu(user: user)
         } else {
             VStack {
                 HStack(alignment: .center, spacing: 20, content: {
@@ -114,25 +116,25 @@ struct Onboarding: View {
         func hash(into hasher: inout Hasher) {
             
         }
-        
-        struct GrowingButton: ButtonStyle {
-            func makeBody(configuration: Configuration) -> some View {
-                configuration.label
-                    .padding()
-                    .scaleEffect(configuration.isPressed ? 1.3 : 1)
-                    .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
-            }
-        }
+    }
+}
+
+struct GrowingButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .scaleEffect(configuration.isPressed ? 1.3 : 1)
+            .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
 }
 
 struct Onboarding_Previews: PreviewProvider {
     static var previews: some View {
-        Onboarding()
+        Onboarding(user: AppUser())
             .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
             .previewDisplayName("iPhone 13 Pro Max")
 
-        Onboarding()
+        Onboarding(user: AppUser())
             .previewDevice(PreviewDevice(rawValue: "iPhone X"))
             .previewDisplayName("iPhone X")
     }
