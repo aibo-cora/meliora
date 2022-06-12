@@ -12,10 +12,10 @@
 		DE152E462855231900F5E0ED /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE152E452855231900F5E0ED /* MainMenu.swift */; };
 		DE152E472855231900F5E0ED /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE152E452855231900F5E0ED /* MainMenu.swift */; };
 		DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B4FC42848F00A007A0BFA /* AppUser.swift */; };
-		DE4051712856718F001B0C56 /* BlinkingLiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4051702856718F001B0C56 /* BlinkingLiveButton.swift */; };
-		DE4051722856718F001B0C56 /* BlinkingLiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4051702856718F001B0C56 /* BlinkingLiveButton.swift */; };
-		DE4051742856764A001B0C56 /* StartLiveStreamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40517328567649001B0C56 /* StartLiveStreamButton.swift */; };
-		DE4051752856764A001B0C56 /* StartLiveStreamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40517328567649001B0C56 /* StartLiveStreamButton.swift */; };
+		DE4051712856718F001B0C56 /* BlinkingLiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4051702856718F001B0C56 /* BlinkingLiveLabel.swift */; };
+		DE4051722856718F001B0C56 /* BlinkingLiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4051702856718F001B0C56 /* BlinkingLiveLabel.swift */; };
+		DE4051742856764A001B0C56 /* StartLiveStreamLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40517328567649001B0C56 /* StartLiveStreamLabel.swift */; };
+		DE4051752856764A001B0C56 /* StartLiveStreamLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE40517328567649001B0C56 /* StartLiveStreamLabel.swift */; };
 		DE7A163C280E39CF008F1886 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163B280E39CF008F1886 /* Tests_iOS.swift */; };
 		DE7A163E280E39CF008F1886 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A163D280E39CF008F1886 /* Tests_iOSLaunchTests.swift */; };
 		DE7A1648280E39CF008F1886 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1647280E39CF008F1886 /* Tests_macOS.swift */; };
@@ -114,8 +114,8 @@
 		DD65807BD7267580F9FCAC80 /* Pods-Meliora (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Meliora (macOS)/Pods-Meliora (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		DE152E452855231900F5E0ED /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		DE2B4FC42848F00A007A0BFA /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
-		DE4051702856718F001B0C56 /* BlinkingLiveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingLiveButton.swift; sourceTree = "<group>"; };
-		DE40517328567649001B0C56 /* StartLiveStreamButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLiveStreamButton.swift; sourceTree = "<group>"; };
+		DE4051702856718F001B0C56 /* BlinkingLiveLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingLiveLabel.swift; sourceTree = "<group>"; };
+		DE40517328567649001B0C56 /* StartLiveStreamLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLiveStreamLabel.swift; sourceTree = "<group>"; };
 		DE5B82A4280E3BAF00FB71B6 /* Meliora (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Meliora (iOS).entitlements"; sourceTree = "<group>"; };
 		DE6B65D12821D18900056861 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE7A1623280E39CD008F1886 /* MelioraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelioraApp.swift; sourceTree = "<group>"; };
@@ -419,8 +419,8 @@
 			children = (
 				DE7A1663280E3A20008F1886 /* Identity.swift */,
 				DE7A166F280E3A20008F1886 /* StreamingControl.swift */,
-				DE4051702856718F001B0C56 /* BlinkingLiveButton.swift */,
-				DE40517328567649001B0C56 /* StartLiveStreamButton.swift */,
+				DE4051702856718F001B0C56 /* BlinkingLiveLabel.swift */,
+				DE40517328567649001B0C56 /* StartLiveStreamLabel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -688,7 +688,7 @@
 				DE7A1689280E3A20008F1886 /* WatchVideos.swift in Sources */,
 				DE7A1697280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1683280E3A20008F1886 /* Settings.swift in Sources */,
-				DE4051742856764A001B0C56 /* StartLiveStreamButton.swift in Sources */,
+				DE4051742856764A001B0C56 /* StartLiveStreamLabel.swift in Sources */,
 				DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */,
 				DE7A169D280E3A20008F1886 /* FrameViewModel.swift in Sources */,
 				DE7A168F280E3A20008F1886 /* CameraPermission.swift in Sources */,
@@ -697,7 +697,7 @@
 				DE7A16AB280E3A20008F1886 /* CameraManager.swift in Sources */,
 				DE7A1685280E3A20008F1886 /* Identity.swift in Sources */,
 				DE7A168B280E3A20008F1886 /* LiveFeed.swift in Sources */,
-				DE4051712856718F001B0C56 /* BlinkingLiveButton.swift in Sources */,
+				DE4051712856718F001B0C56 /* BlinkingLiveLabel.swift in Sources */,
 				DEA44B66284D23AF00729989 /* Onboarding.swift in Sources */,
 				DE7A1687280E3A20008F1886 /* Watching.swift in Sources */,
 				DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */,
@@ -739,9 +739,9 @@
 				DEB0D0FA28564FD90081F957 /* ContentManagement.swift in Sources */,
 				DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */,
 				DE7A1692280E3A20008F1886 /* MicrophonePermission.swift in Sources */,
-				DE4051752856764A001B0C56 /* StartLiveStreamButton.swift in Sources */,
+				DE4051752856764A001B0C56 /* StartLiveStreamLabel.swift in Sources */,
 				DE7A169C280E3A20008F1886 /* SignIn.swift in Sources */,
-				DE4051722856718F001B0C56 /* BlinkingLiveButton.swift in Sources */,
+				DE4051722856718F001B0C56 /* BlinkingLiveLabel.swift in Sources */,
 				DE7A1694280E3A20008F1886 /* StreamingControl.swift in Sources */,
 				DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */,
 				DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */,

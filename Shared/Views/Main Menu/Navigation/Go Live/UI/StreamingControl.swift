@@ -16,10 +16,10 @@ struct StreamingControl: View {
     @ObservedObject var user: User
     
     @ViewBuilder var body: some View {
-        if session.sessionStatus == .unknown {
-            
-        }
-        if session.sessionStatus == .connecting {
+        switch session.sessionStatus {
+        case .unknown:
+            Text("Critical error: Session status unknown.")
+        case .connecting:
             Text("Starting up session, please wait...")
                 .foregroundColor(.white)
                 .padding(.bottom, 50)
@@ -29,8 +29,7 @@ struct StreamingControl: View {
                         .linear(duration: 2)
                         .repeatForever()) { blink.toggle() }
                 }
-        }
-        if session.sessionStatus == .connected {
+        case .connected:
             Button(action: {
                 print(streaming ? "Stopped streaming" : "Started streaming")
                 
@@ -39,13 +38,12 @@ struct StreamingControl: View {
                 streaming.toggle()
             }) {
                 if self.streaming {
-                    BlinkingLiveButton()
+                    BlinkingLiveLabel()
                 } else {
-                    StartLiveStreamButton()
+                    StartLiveStreamLabel()
                 }
             }
-        }
-        if session.sessionStatus == .failed {
+        default:
             Text("Session failed, please restart...")
                 .foregroundColor(.white)
                 .padding(.bottom, 50)

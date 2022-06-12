@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BlinkingLiveButton: View {
+struct BlinkingLiveLabel: View {
     @State private var blink = false
     
     var body: some View {
@@ -33,6 +33,6 @@ struct BlinkingLiveButton: View {
 
 struct BlinkingLiveButton_Previews: PreviewProvider {
     static var previews: some View {
-        BlinkingLiveButton()
+        BlinkingLiveLabel()
     }
 }

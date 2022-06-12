@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StartLiveStreamButton: View {
+struct StartLiveStreamLabel: View {
     
     var body: some View {
         HStack {
@@ -24,6 +24,6 @@ struct StartLiveStreamButton: View {
 
 struct StartLiveStreamButton_Previews: PreviewProvider {
     static var previews: some View {
-        StartLiveStreamButton()
+        StartLiveStreamLabel()
     }
 }

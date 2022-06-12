@@ -58,6 +58,6 @@ struct LiveFeed: View {
 
 struct Streaming_Previews: PreviewProvider {
     static var previews: some View {
-        LiveFeed(session: Session(), user: User())
+        LiveFeed(hasCameraPermission: true, hasMicrophonePermission: true, session: Session(), user: User())
     }
 }
