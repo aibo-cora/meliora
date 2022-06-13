@@ -36,6 +36,15 @@ The purpose of this project is to bring developers, designers, sponsors, investo
     </ul> 
 </ol>  
 
+<h4> Future features </h4>
+<ol>  
+ <li> UI </li>
+    <ul> 
+        <li> Await for framework update to interactively add additional streams (multiple camera angles or co-hosts) into the main stream in <code>Go Live</code> </li>
+        <li> Redesign <code>Staging</code> to send a request to be added to a stream </li>
+    </ul>
+</ol> 
+
 <h4> Known Issues </h4>
 <ol>  
  <li> Authentication </li>
