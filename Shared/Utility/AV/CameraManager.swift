@@ -2,14 +2,13 @@ import AVFoundation
 
 class CameraManager: ObservableObject {
     @Published var error: CameraError?
-
+    @Published var streaming = false
+    
     let session = AVCaptureSession()
     
     private let sessionQueue = DispatchQueue(label: "capture.session.serial")
     private var status = Status.unconfigured
     
-    var streaming = false
-
     enum Status {
         case unconfigured
         case configured
@@ -116,6 +115,7 @@ class CameraManager: ObservableObject {
                 self.session.startRunning()
             }
         }
+        streaming = true
     }
     
     public func stop() {
@@ -125,5 +125,6 @@ class CameraManager: ObservableObject {
                 self.session.stopRunning()
             }
         }
+        streaming = false
     }
 }

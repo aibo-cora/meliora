@@ -32,6 +32,8 @@ public class Session: NSObject, ObservableObject {
     @Published var sessionStatus: SessionStatus = .unknown
     @Published var streamers = [Streamer]()
     
+    var subscriptions = [AnyCancellable]()
+    
     fileprivate func setupSubscription() {
         jointSession?.$sessionStatus
             .receive(on: RunLoop.main, options: nil)
@@ -45,21 +47,23 @@ public class Session: NSObject, ObservableObject {
             .assign(to: &$streamers)
     }
     
-    func establishConnection() async -> (didConnect: Bool, error: Error?)? {
-        let task = Task { () -> (didConnect: Bool, error: Error?) in
+    func establishConnection() async throws -> (didConnect: Bool, error: String?) {
+        let task = Task { () -> (didConnect: Bool, error: String?) in
             do {
                 if try await jointSession?.configureClient() == true {
                     return (true, nil)
                 }
             } catch JointSessionError.invalidAPIKey {
-                
+                return (false, "Invalid API key.")
             } catch JointSessionError.clientConfiguration {
+                return (false, "Invalid client configuration.")
+            } catch {
                 
             }
             
             return (false, nil)
         }
         
-        return try? await task.result.get()
+        return try await task.result.get()
     }
 }

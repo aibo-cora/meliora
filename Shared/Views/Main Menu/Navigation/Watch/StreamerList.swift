@@ -12,7 +12,7 @@ struct StreamerList: View {
     @State private var active = false
     
     var streamers: [Streamer]
-    let session: Session?
+    let session: Session
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -40,6 +40,9 @@ struct StreamerList: View {
                         }
                     }
                 }
+                .onReceive(session.$streamers, perform: { output in
+                    print(output)
+                })
                 .padding(.trailing, 75)
             }
             .padding()
@@ -59,6 +62,6 @@ struct StreamerList: View {
 
 struct StreamerList_Previews: PreviewProvider {
     static var previews: some View {
-        StreamerList(streamers: [Streamer](), session: nil)
+        StreamerList(streamers: [Streamer](), session: Session())
     }
 }
