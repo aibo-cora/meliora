@@ -11,8 +11,8 @@ import AVKit
 
 struct Watching: View {
     let streamer: Streamer
-    let session: Session
     
+    @ObservedObject var session: Session
     @State private var player = AVQueuePlayer()
     
     var body: some View {
@@ -24,7 +24,7 @@ struct Watching: View {
             .onDisappear() {
                 player.pause()
             }
-            .background(Color.gray)
+            .background(ProgressView())
     }
 }
 
@@ -49,6 +49,7 @@ struct CustomVideoPlayer: UIViewRepresentable {
         
         view.playerLayer.videoGravity = .resizeAspectFill
         view.player = player
+        
         return view
     }
     

@@ -41,6 +41,7 @@ struct Staging: View {
                 .disabled(channel.isEmpty)
                 .padding(.bottom)
             }
+            
         }
     }
 }

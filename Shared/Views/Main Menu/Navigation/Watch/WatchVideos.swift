@@ -6,35 +6,30 @@
 //
 
 import SwiftUI
+import Joint
 
 struct WatchVideos: View {
     @ObservedObject var session: Session
     @ObservedObject var user: AppUser
     
     var body: some View {
-        NavigationView {
-            VStack {
-                StreamerList(streamers: session.streamers, session: session)
-                
-                Spacer()
-                
-    //            if let streamer = session.model.selected {
-    //                VStack(alignment: .center) {
-    //                    Text(streamer.email)
-    //                    Image(systemName: "network")
-    //                        .resizable()
-    //                        .frame(width: 100, height: 100)
-    //                    Button {
-    //
-    //                    } label: {
-    //                        Text("Join Stream")
-    //                    }
-    //                }
-    //                .padding()
-    //            }
+        GeometryReader { geometry in
+            ScrollView {
+                LazyVStack {
+                    ForEach(Array(session.streamers.enumerated()), id: \.element) { index, streamer in
+                        Watching(streamer: streamer, session: session)
+                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                            
+                    }
+                }
             }
+            .onReceive(session.$streamers, perform: { streamers in
+                streamers.forEach { streamer in
+                    
+                }
+            })
         }
-        .navigationViewStyle(.stack)
+        .ignoresSafeArea()
     }
 }
 
