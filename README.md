@@ -17,6 +17,7 @@ The purpose of this project is to bring developers, designers, sponsors, investo
         <li> Users decide what kind of content the app delivers (Content Control - CC) </li>
             <ul>
                 <li> Design content & focus filter UI </li>
+                <li> Card based 􀉿 and dislike for content. Rewind? </li>
             </ul>
     </ul>
  <li> Theia </li> 
@@ -30,15 +31,31 @@ The purpose of this project is to bring developers, designers, sponsors, investo
     <ul> 
         <li> Video watermarking </li>
             <ul>
-                <li> Embed digital footprint </li>
+                <li> Embed digital footprint for IP </li>
             </ul>
     </ul> 
 </ol>  
 
 <h4> Known Issues </h4>
-- Starting stream does not toggle the red button.<br>
-- If the API server is down, users signing in won't be in the database.<br>
-    Resolution:<br>
-        - Sync with DB on app launch.<br>
+<ol>  
+ <li> Authentication </li>
+    <ul> 
+        <li> If the API server is down, users signing in won't be in the database </li>
+            <ul>
+                <li> Sync with DB on app launch </li>
+            </ul>
+    </ul>
+ <li> Performance - Redraws </li>
+    <ul> 
+        <li> Staging </li>
+    </ul> 
+ <li> Performance - Energy Use </li>
+    <ul> 
+        <li> During stream </li>
+            <ul>
+                <li> Device becomes way too hot </li>
+            </ul>
+    </ul> 
+</ol> 
 <br><br>
 Joint version: <code>1.0.12</code>
