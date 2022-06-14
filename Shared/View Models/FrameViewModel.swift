@@ -9,8 +9,7 @@ import Foundation
 import CoreImage
 
 class FrameViewModel: ObservableObject {
-    @Published
-    var frame: CGImage?
+    @Published var frame: CGImage?
     
     private let supplier = FrameSupplier.shared
     

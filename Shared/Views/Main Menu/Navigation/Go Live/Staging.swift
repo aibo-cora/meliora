@@ -12,7 +12,6 @@ struct Staging: View {
     let user: AppUser
     
     @ObservedObject var session: Session
-    @StateObject private var feed = FrameViewModel()
     @State private var channel: String = "/channel/1"
     
     var body: some View {
@@ -33,7 +32,7 @@ struct Staging: View {
                 .navigationBarTitleDisplayMode(.inline)
                 
                 NavigationLink {
-                    LiveFeed(session: session, user: user, image: feed.frame)
+                    LiveFeed(session: session, user: user)
                         .ignoresSafeArea()
                 } label: {
                     Text("Start")

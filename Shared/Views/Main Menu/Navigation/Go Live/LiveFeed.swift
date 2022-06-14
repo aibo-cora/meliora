@@ -16,22 +16,21 @@ struct LiveFeed: View {
     @ObservedObject var session: Session
     @ObservedObject var user: User
     
-    var image: CGImage?
+    @StateObject private var feed = FrameViewModel()
+    
     private let label = Text("Camera feed")
     
     @ViewBuilder var body: some View {
         VStack {
             if hasCameraPermission {
                 if hasMicrophonePermission {
-                    if let feed = image {
+                    if let frame = feed.frame {
                         ZStack {
                             GeometryReader { geometry in
-                                Image(feed, scale: 1.0, orientation: .leftMirrored, label: label)
+                                Image(frame, scale: 1.0, orientation: .leftMirrored, label: label)
                                     .resizable()
                                     .scaledToFill()
-                                    .frame(width: geometry.size.width,
-                                           height: geometry.size.height,
-                                           alignment: .center)
+                                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
                                     .clipped()
                             }
                             .onDisappear() { CameraManager.shared.stop() }
@@ -44,7 +43,7 @@ struct LiveFeed: View {
                             }
                         }
                     } else {
-                        Color.black
+                        ProgressView()
                     }
                 } else {
                     MicrophonePermission(permissionGranted: $hasMicrophonePermission)
