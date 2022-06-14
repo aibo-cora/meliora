@@ -34,6 +34,10 @@ The purpose of this project is to bring developers, designers, sponsors, investo
                 <li> Embed digital footprint for IP </li>
             </ul>
     </ul> 
+ <li> Hephaestus </li> 
+    <ul> 
+        <li> Content Creators </li>
+    </ul> 
 </ol>  
 
 <h4> Future features </h4>
