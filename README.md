@@ -34,6 +34,10 @@ The purpose of this project is to bring developers, designers, sponsors, investo
                 <li> Embed digital footprint for IP </li>
             </ul>
     </ul> 
+ <li> Hephaestus </li> 
+    <ul> 
+        <li> Content Creators </li>
+    </ul> 
 </ol>  
 
 <h4> Future features </h4>
@@ -54,10 +58,6 @@ The purpose of this project is to bring developers, designers, sponsors, investo
                 <li> Sync with DB on app launch </li>
             </ul>
     </ul>
- <li> Performance - Redraws </li>
-    <ul> 
-        <li> Staging </li>
-    </ul> 
  <li> Performance - Energy Use </li>
     <ul> 
         <li> During stream </li>

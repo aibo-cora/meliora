@@ -9,7 +9,6 @@ import SwiftUI
 import Joint
 
 struct StreamingControl: View {
-    @State private var blink = false
     @State private var streaming = false
     
     @ObservedObject var session: Session
@@ -20,15 +19,7 @@ struct StreamingControl: View {
         case .unknown:
             Text("Critical error: Session status unknown.")
         case .connecting:
-            Text("Starting up session, please wait...")
-                .foregroundColor(.white)
-                .padding(.bottom, 50)
-                .opacity(blink ? 0 : 1)
-                .onAppear() {
-                    withAnimation(Animation
-                        .linear(duration: 2)
-                        .repeatForever()) { blink.toggle() }
-                }
+            DisplayErrorMessage(message: "Starting up session, please wait...")
         case .connected:
             Button(action: {
                 print(streaming ? "Stopped streaming" : "Started streaming")
@@ -44,7 +35,17 @@ struct StreamingControl: View {
                 }
             }
         default:
-            Text("Session failed, please restart...")
+            DisplayErrorMessage(message: "Session failed, please restart...")
+        }
+    }
+    
+    struct DisplayErrorMessage: View {
+        @State private var blink = false
+        
+        let message: String
+        
+        var body: some View {
+            Text(message)
                 .foregroundColor(.white)
                 .padding(.bottom, 50)
                 .opacity(blink ? 0 : 1)

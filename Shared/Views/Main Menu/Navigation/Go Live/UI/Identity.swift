@@ -10,6 +10,7 @@ import Joint
 
 struct Identity: View {
     @State private var didAppear = false
+    
     let user: User
     
     var body: some View {
