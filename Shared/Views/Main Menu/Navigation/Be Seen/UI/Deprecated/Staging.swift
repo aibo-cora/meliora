@@ -31,14 +31,14 @@ struct Staging: View {
                 .navigationTitle("Stream Settings")
                 .navigationBarTitleDisplayMode(.inline)
                 
-                NavigationLink {
-                    LiveFeed(session: session, user: user)
-                        .ignoresSafeArea()
-                } label: {
-                    Text("Start")
-                }
-                .disabled(channel.isEmpty)
-                .padding(.bottom)
+//                NavigationLink {
+//                    LiveFeed(session: session, user: user)
+//                        .ignoresSafeArea()
+//                } label: {
+//                    Text("Start")
+//                }
+//                .disabled(channel.isEmpty)
+//                .padding(.bottom)
             }
         }
         .navigationViewStyle(.stack)

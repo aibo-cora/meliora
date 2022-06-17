@@ -8,24 +8,27 @@
 import SwiftUI
 import AVKit
 
-struct CameraPermission: View {
+struct MicrophonePermissionView: View {
     @Binding var permissionGranted: Bool
     
     var body: some View {
-        switch AVCaptureDevice.authorizationStatus(for: .video) {
+        switch AVCaptureDevice.authorizationStatus(for: .audio) {
         case .authorized:
             HStack {
-                // Text("Camera: Authorized")
+                ProgressView()
+                    .progressViewStyle(.automatic)
+                    .padding()
+                Text("Starting up...")
             }
             .onAppear(perform: {
                 permissionGranted = true
             })
             .padding()
         case .notDetermined:
-            Text("For the best possible experience, are you ready to grant Camera permissions to start a stream?")
+            Text("For the best possible experience, are you ready to grant Microphone permissions to start a stream?")
                 .padding()
             Button {
-                AVCaptureDevice.requestAccess(for: .video) { granted in
+                AVCaptureDevice.requestAccess(for: .audio) { granted in
                     DispatchQueue.main.async {
                         if granted {
                             permissionGranted.toggle()
@@ -37,7 +40,7 @@ struct CameraPermission: View {
             }
         case .restricted, .denied:
             VStack {
-                Text("Camera permission was denied or restricted previously. Full access is required for the best possible experience during a stream. Change it in Settings.")
+                Text("Microphone permission was denied or restricted previously. Full access is required for the best possible experience during a stream. Change it in Settings.")
                     .padding()
                 Button {
                     UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!,
@@ -48,7 +51,7 @@ struct CameraPermission: View {
                 }
             }
         @unknown default:
-            Text("Camera access unknown.")
+            Text("Microphone access unknown.")
         }
     }
 }

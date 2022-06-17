@@ -3,28 +3,35 @@ import AVFoundation
 class CameraManager: ObservableObject {
     @Published var error: CameraError?
     @Published var streaming = false
+    @Published private(set) var status = Status.unconfigured
     
     let session = AVCaptureSession()
     
     private let sessionQueue = DispatchQueue(label: "capture.session.serial")
-    private var status = Status.unconfigured
+    
     
     enum Status {
-        case unconfigured
-        case configured
-        case unauthorized
-        case failed
+        case unconfigured, configured, unauthorized, failed
     }
     
     public static let shared = CameraManager()
     private init() {
-        configure()
+        Task {
+            await configure()
+        }
+        
     }
 
-    private func configure() {
-        checkPermissions()
-        sessionQueue.async {
-            self.configureCaptureSession()
+    private func configure() async {
+        let audioResult = await avAuthorization(type: .audio)
+        let videoResult = await avAuthorization(type: .video)
+        
+        if audioResult && videoResult {
+            sessionQueue.async {
+                self.configureCaptureSession()
+            }
+        } else {
+            self.status = .unauthorized
         }
     }
     
@@ -34,29 +41,15 @@ class CameraManager: ObservableObject {
         }
     }
     
-    private func checkPermissions() {
-        switch AVCaptureDevice.authorizationStatus(for: .video) {
-            case .notDetermined:
-            sessionQueue.suspend()
-                
-            AVCaptureDevice.requestAccess(for: .video) { authorized in
-                if !authorized {
-                    self.status = .unauthorized
-                    self.set(error: .deniedAuthorization)
-                }
-                self.sessionQueue.resume()
-            }
-            case .restricted:
-                status = .unauthorized
-                set(error: .restrictedAuthorization)
-            case .denied:
-                status = .unauthorized
-                set(error: .deniedAuthorization)
-            case .authorized:
-                break
-            @unknown default:
-                status = .unauthorized
-                set(error: .unknownAuthorization)
+    func avAuthorization(type: AVMediaType) async -> Bool {
+        let mediaAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: type)
+        
+        switch mediaAuthorizationStatus {
+            case .denied, .restricted: return false
+            case .authorized: return true
+            case .notDetermined: return await AVCaptureDevice.requestAccess(for: type)
+        @unknown default:
+            return false
         }
     }
     

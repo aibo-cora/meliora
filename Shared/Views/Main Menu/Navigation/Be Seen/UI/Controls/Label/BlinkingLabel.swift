@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct BlinkingLiveLabel: View {
+struct BlinkingLabel: View {
+    let label: String
+    
     @State private var blink = false
     
     var body: some View {
         HStack {
             Circle()
                 .frame(width: 20, height: 20)
-            Text("Live")
+            Text(label)
                 
         }
         .padding(.all, 10)
@@ -27,12 +29,11 @@ struct BlinkingLiveLabel: View {
                 .repeatForever()) { blink.toggle() }
         }
         .foregroundColor(.red)
-        .padding(.bottom, 100)
     }
 }
 
 struct BlinkingLiveButton_Previews: PreviewProvider {
     static var previews: some View {
-        BlinkingLiveLabel()
+        BlinkingLabel(label: "Live")
     }
 }
