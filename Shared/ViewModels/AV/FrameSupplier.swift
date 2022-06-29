@@ -23,8 +23,6 @@ class FrameSupplier: NSObject, ObservableObject {
     
     private override init() {
         super.init()
-        
-        CameraManager.shared.start()
     }
 }
 

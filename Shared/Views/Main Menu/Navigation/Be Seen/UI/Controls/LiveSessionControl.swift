@@ -1,14 +1,14 @@
 //
-//  StreamButton.swift
-//  Nexus (iOS)
+//  LiveSessionControl.swift
+//  Meliora
 //
-//  Created by Yura on 3/21/22.
+//  Created by Yura on 6/17/22.
 //
 
 import SwiftUI
 import Joint
 
-struct StreamingControl: View {
+struct LiveSessionControl: View {
     @State private var streaming = false
     
     @ObservedObject var session: Session
@@ -17,7 +17,7 @@ struct StreamingControl: View {
     @ViewBuilder var body: some View {
         switch session.sessionStatus {
         case .unknown:
-            Text("Critical error: Session status unknown.")
+            DisplayErrorMessage(message: "Critical error: Session status unknown.")
         case .connecting:
             DisplayErrorMessage(message: "Starting up session, please wait...")
         case .connected:
@@ -28,11 +28,7 @@ struct StreamingControl: View {
                 streaming ? session.jointSession?.stopSession(streamer: streamer) : session.jointSession?.startSession(streamer: streamer)
                 streaming.toggle()
             }) {
-                if self.streaming {
-                    BlinkingLiveLabel()
-                } else {
-                    StartLiveStreamLabel()
-                }
+                SessionControlLabel(condition: streaming, label: "Live")
             }
         default:
             DisplayErrorMessage(message: "Session failed, please restart...")
@@ -58,8 +54,8 @@ struct StreamingControl: View {
     }
 }
 
-struct StreamButton_Previews: PreviewProvider {
+struct LiveSessionControl_Previews: PreviewProvider {
     static var previews: some View {
-        StreamingControl(session: Session(), user: User())
+        LiveSessionControl(session: Session(), user: User())
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StartLiveStreamLabel: View {
+struct StartSessionLabel: View {
     
     var body: some View {
         HStack {
@@ -16,14 +16,12 @@ struct StartLiveStreamLabel: View {
                 .frame(width: 50, height: 50)
                 .foregroundColor(.red)
                 .clipped()
-                .padding(.bottom, 100)
         }
-        
     }
 }
 
 struct StartLiveStreamButton_Previews: PreviewProvider {
     static var previews: some View {
-        StartLiveStreamLabel()
+        StartSessionLabel()
     }
 }

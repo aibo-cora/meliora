@@ -7,6 +7,7 @@
 
 import Foundation
 import Joint
+import AVFoundation
 import Combine
 
 public class Session: NSObject, ObservableObject {

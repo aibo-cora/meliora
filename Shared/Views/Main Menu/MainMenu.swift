@@ -9,17 +9,17 @@ import SwiftUI
 
 struct MainMenu: View {
     @StateObject var session = Session()
-    @State private var connecting = true
+    @State private var ready = false
     
     let user: AppUser
     
     @ViewBuilder var body: some View {
-        if connecting {
+        if !ready {
             ProgressView("Connecting...")
                 .task {
                     do {
                         if try await session.establishConnection().didConnect {
-                            self.connecting = false
+                            self.ready = true
                         }
                     } catch {
                         
@@ -34,11 +34,11 @@ struct MainMenu: View {
                             Text("Watch")
                         }
                     }
-                Staging(user: user, session: session)
+                BeSeen(user: user, session: session)
                     .tabItem {
                         VStack {
                             Image(systemName: "livephoto.play")
-                            Text("Go Live")
+                            Text("Be Seen")
                         }
                     }
                 Notifications()

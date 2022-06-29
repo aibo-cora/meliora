@@ -20,9 +20,7 @@ class FrameViewModel: ObservableObject {
     private func setupSubscriptions() {
         supplier.$current
             .receive(on: RunLoop.main, options: nil)
-            .compactMap { buffer in
-                return CGImage.create(from: buffer)
-            }
+            .compactMap { CGImage.create(from: $0) }
             .assign(to: &$frame)
     }
 }
