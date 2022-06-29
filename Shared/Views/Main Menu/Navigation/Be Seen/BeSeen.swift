@@ -12,7 +12,7 @@ struct BeSeen: View {
         case recording, live
     }
     
-    @State private var selection = SessionModes.recording.rawValue
+    @State private var selection = SessionModes.live.rawValue
     @StateObject private var frameViewModel = FrameViewModel()
     @StateObject private var cameraManager = CameraManager.shared
     
@@ -30,14 +30,14 @@ struct BeSeen: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    Picker("Record a video to share or start a live stream", selection: $selection) {
-                        Text("Recording")
-                            .tag(0)
-                        Text("Live Stream")
-                            .tag(1)
-                    }
-                    .pickerStyle(.segmented)
-                    .padding()
+//                    Picker("Record a video to share or start a live stream", selection: $selection) {
+//                        Text("Recording")
+//                            .tag(0)
+//                        Text("Live Stream")
+//                            .tag(1)
+//                    }
+//                    .pickerStyle(.segmented)
+//                    .padding()
                     
                     Spacer()
                     
