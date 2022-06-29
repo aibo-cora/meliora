@@ -27,6 +27,7 @@ struct SessionControl: View {
                 .onDisappear {
                     // stop recording
                 }
+                .disabled(true)
         }
         
     }

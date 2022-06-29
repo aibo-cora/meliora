@@ -48,10 +48,6 @@
 		DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1669280E3A20008F1886 /* LiveFeed.swift */; };
 		DE7A168D280E3A20008F1886 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166A280E3A20008F1886 /* Session.swift */; };
 		DE7A168E280E3A20008F1886 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166A280E3A20008F1886 /* Session.swift */; };
-		DE7A168F280E3A20008F1886 /* CameraPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166C280E3A20008F1886 /* CameraPermissionView.swift */; };
-		DE7A1690280E3A20008F1886 /* CameraPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166C280E3A20008F1886 /* CameraPermissionView.swift */; };
-		DE7A1691280E3A20008F1886 /* MicrophonePermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166D280E3A20008F1886 /* MicrophonePermissionView.swift */; };
-		DE7A1692280E3A20008F1886 /* MicrophonePermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166D280E3A20008F1886 /* MicrophonePermissionView.swift */; };
 		DE7A1693280E3A20008F1886 /* SessionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166F280E3A20008F1886 /* SessionControl.swift */; };
 		DE7A1694280E3A20008F1886 /* SessionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166F280E3A20008F1886 /* SessionControl.swift */; };
 		DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1670280E3A20008F1886 /* StreamerList.swift */; };
@@ -153,8 +149,6 @@
 		DE7A1667280E3A20008F1886 /* WatchVideos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchVideos.swift; sourceTree = "<group>"; };
 		DE7A1669280E3A20008F1886 /* LiveFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveFeed.swift; sourceTree = "<group>"; };
 		DE7A166A280E3A20008F1886 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		DE7A166C280E3A20008F1886 /* CameraPermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermissionView.swift; sourceTree = "<group>"; };
-		DE7A166D280E3A20008F1886 /* MicrophonePermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophonePermissionView.swift; sourceTree = "<group>"; };
 		DE7A166F280E3A20008F1886 /* SessionControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionControl.swift; sourceTree = "<group>"; };
 		DE7A1670280E3A20008F1886 /* StreamerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerList.swift; sourceTree = "<group>"; };
 		DE7A1671280E3A20008F1886 /* Staging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
@@ -294,8 +288,7 @@
 				DE7A1623280E39CD008F1886 /* MelioraApp.swift */,
 				DE7A1676280E3A20008F1886 /* Data Models */,
 				DE7A165F280E3A20008F1886 /* Views */,
-				DE7A167B280E3A20008F1886 /* Utility */,
-				DE7A1674280E3A20008F1886 /* View Models */,
+				DE7A167B280E3A20008F1886 /* ViewModels */,
 				DE7A1625280E39CF008F1886 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -345,7 +338,6 @@
 				DE7A1673280E3A20008F1886 /* SignIn.swift */,
 				DE7A1662280E3A20008F1886 /* Main Menu */,
 				DE7A1660280E3A20008F1886 /* Settings */,
-				DE7A166B280E3A20008F1886 /* Permissions */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,23 +360,6 @@
 			path = "Main Menu";
 			sourceTree = "<group>";
 		};
-		DE7A166B280E3A20008F1886 /* Permissions */ = {
-			isa = PBXGroup;
-			children = (
-				DE7A166C280E3A20008F1886 /* CameraPermissionView.swift */,
-				DE7A166D280E3A20008F1886 /* MicrophonePermissionView.swift */,
-			);
-			path = Permissions;
-			sourceTree = "<group>";
-		};
-		DE7A1674280E3A20008F1886 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				DE7A1675280E3A20008F1886 /* FrameViewModel.swift */,
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
 		DE7A1676280E3A20008F1886 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,7 +368,7 @@
 			path = "Data Models";
 			sourceTree = "<group>";
 		};
-		DE7A167B280E3A20008F1886 /* Utility */ = {
+		DE7A167B280E3A20008F1886 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				DEB32E482845540D00C187B5 /* NetworkCom.swift */,
@@ -401,7 +376,7 @@
 				DE7A167C280E3A20008F1886 /* AV */,
 				DE7A1680280E3A20008F1886 /* Extensions */,
 			);
-			path = Utility;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		DE7A167C280E3A20008F1886 /* AV */ = {
@@ -410,6 +385,7 @@
 				DE7A167D280E3A20008F1886 /* FrameSupplier.swift */,
 				DE7A167E280E3A20008F1886 /* CameraError.swift */,
 				DE7A167F280E3A20008F1886 /* CameraManager.swift */,
+				DE7A1675280E3A20008F1886 /* FrameViewModel.swift */,
 			);
 			path = AV;
 			sourceTree = "<group>";
@@ -749,7 +725,6 @@
 				DE4051742856764A001B0C56 /* StartSessionLabel.swift in Sources */,
 				DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */,
 				DE7A169D280E3A20008F1886 /* FrameViewModel.swift in Sources */,
-				DE7A168F280E3A20008F1886 /* CameraPermissionView.swift in Sources */,
 				DE7A16AD280E3A20008F1886 /* View.swift in Sources */,
 				DE7A1699280E3A20008F1886 /* Intro.swift in Sources */,
 				DE7A16AB280E3A20008F1886 /* CameraManager.swift in Sources */,
@@ -762,7 +737,6 @@
 				DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */,
 				DEB0D0F428564F100081F957 /* Notifications.swift in Sources */,
 				DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */,
-				DE7A1691280E3A20008F1886 /* MicrophonePermissionView.swift in Sources */,
 				DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */,
 				DE7A1693280E3A20008F1886 /* SessionControl.swift in Sources */,
 				DE4051A3285CF714001B0C56 /* SessionControlLabel.swift in Sources */,
@@ -791,7 +765,6 @@
 				DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */,
 				DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */,
 				DE40519E285CF21F001B0C56 /* LiveSessionControl.swift in Sources */,
-				DE7A1690280E3A20008F1886 /* CameraPermissionView.swift in Sources */,
 				DE7A16AE280E3A20008F1886 /* View.swift in Sources */,
 				DE405192285CDF35001B0C56 /* BeSeen.swift in Sources */,
 				DE7A169A280E3A20008F1886 /* Intro.swift in Sources */,
@@ -805,7 +778,6 @@
 				DEB0D0FA28564FD90081F957 /* ContentManagement.swift in Sources */,
 				DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */,
 				DE4051A4285CF714001B0C56 /* SessionControlLabel.swift in Sources */,
-				DE7A1692280E3A20008F1886 /* MicrophonePermissionView.swift in Sources */,
 				DE4051752856764A001B0C56 /* StartSessionLabel.swift in Sources */,
 				DE7A169C280E3A20008F1886 /* SignIn.swift in Sources */,
 				DE405199285CE506001B0C56 /* CameraVideoFeed.swift in Sources */,

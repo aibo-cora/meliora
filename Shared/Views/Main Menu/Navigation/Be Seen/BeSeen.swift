@@ -14,33 +14,52 @@ struct BeSeen: View {
     
     @State private var selection = SessionModes.recording.rawValue
     @StateObject private var frameViewModel = FrameViewModel()
+    @StateObject private var cameraManager = CameraManager.shared
     
     let user: AppUser
     
     @ObservedObject var session: Session
     
     @ViewBuilder var body: some View {
-        ZStack {
-            CameraVideoFeed(frame: frameViewModel.frame)
-                .onAppear() { CameraManager.shared.start() }
-                .onDisappear() { CameraManager.shared.stop() }
-                .ignoresSafeArea()
-            
-            VStack {
-                Picker("Record a video to share or start a live stream", selection: $selection) {
-                    Text("Recording")
-                        .tag(0)
-                    Text("Live Stream")
-                        .tag(1)
+        switch cameraManager.status {
+        case .configured:
+            ZStack {
+                CameraVideoFeed(frame: frameViewModel.frame)
+                    .onAppear() { CameraManager.shared.start() }
+                    .onDisappear() { CameraManager.shared.stop() }
+                    .ignoresSafeArea()
+                
+                VStack {
+                    Picker("Record a video to share or start a live stream", selection: $selection) {
+                        Text("Recording")
+                            .tag(0)
+                        Text("Live Stream")
+                            .tag(1)
+                    }
+                    .pickerStyle(.segmented)
+                    .padding()
+                    
+                    Spacer()
+                    
+                    SessionControl(mode: $selection, session: session, user: user, cameraManager: CameraManager.shared)
                 }
-                .pickerStyle(.segmented)
-                .padding()
-                
-                Spacer()
-                
-                SessionControl(mode: $selection, session: session, user: user, cameraManager: CameraManager.shared)
             }
+        case .unauthorized:
+            VStack {
+                Text("Microphone or Camera permission was denied or restricted previously. Full access is required for the best possible experience during a stream. Change your Settings.")
+                    .padding()
+                Button {
+                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!,
+                                                 options: [:],
+                                       completionHandler: nil)
+                } label: {
+                    Text("Open Settings")
+                }
+            }
+        default:
+            ProgressView()
         }
+        
     }
 }
 

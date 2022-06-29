@@ -3,7 +3,11 @@ import AVFoundation
 class CameraManager: ObservableObject {
     @Published var error: CameraError?
     @Published var streaming = false
-    @Published private(set) var status = Status.unconfigured
+    @Published private(set) var status = Status.unconfigured {
+        willSet {
+            
+        }
+    }
     
     let session = AVCaptureSession()
     
@@ -31,7 +35,9 @@ class CameraManager: ObservableObject {
                 self.configureCaptureSession()
             }
         } else {
-            self.status = .unauthorized
+            Task {
+                await changeStatus(to: .unauthorized)
+            }
         }
     }
     
@@ -74,7 +80,9 @@ class CameraManager: ObservableObject {
             guard let videoDevice = defaultVideoDevice else {
                 print("Default video device is unavailable.")
                 
-                status = .failed
+                Task {
+                    await changeStatus(to: .failed)
+                }
                 session.commitConfiguration()
                 
                 return
@@ -86,19 +94,30 @@ class CameraManager: ObservableObject {
             } else {
                 print("Couldn't add video device input to the session.")
                 
-                status = .failed
+                Task {
+                    await changeStatus(to: .failed)
+                }
                 session.commitConfiguration()
                 
                 return
             }
         } catch {
             set(error: .createCaptureInput(error))
-            status = .failed
+            Task {
+                await changeStatus(to: .failed)
+            }
             
             return
         }
         session.commitConfiguration()
-        status = .configured
+        
+        Task {
+            await changeStatus(to: .configured)
+        }
+    }
+    
+    @MainActor func changeStatus(to status: Status) {
+        self.status = status
     }
     
     public func start() {
