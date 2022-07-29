@@ -52,8 +52,6 @@
 		DE7A1694280E3A20008F1886 /* SessionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A166F280E3A20008F1886 /* SessionControl.swift */; };
 		DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1670280E3A20008F1886 /* StreamerList.swift */; };
 		DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1670280E3A20008F1886 /* StreamerList.swift */; };
-		DE7A1697280E3A20008F1886 /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Staging.swift */; };
-		DE7A1698280E3A20008F1886 /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1671280E3A20008F1886 /* Staging.swift */; };
 		DE7A1699280E3A20008F1886 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1672280E3A20008F1886 /* Intro.swift */; };
 		DE7A169A280E3A20008F1886 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1672280E3A20008F1886 /* Intro.swift */; };
 		DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A1673280E3A20008F1886 /* SignIn.swift */; };
@@ -83,6 +81,10 @@
 		DEB0D0FE2856501C0081F957 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0FC2856501C0081F957 /* AppSettings.swift */; };
 		DEB32E492845540D00C187B5 /* NetworkCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB32E482845540D00C187B5 /* NetworkCom.swift */; };
 		DEB32E4A2845540D00C187B5 /* NetworkCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB32E482845540D00C187B5 /* NetworkCom.swift */; };
+		DEF2D3D52894228F00B75A91 /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3D42894228F00B75A91 /* Staging.swift */; };
+		DEF2D3D62894228F00B75A91 /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3D42894228F00B75A91 /* Staging.swift */; };
+		DEF2D3D9289430C100B75A91 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3D8289430C100B75A91 /* QuoteView.swift */; };
+		DEF2D3DA289430C100B75A91 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3D8289430C100B75A91 /* QuoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,7 +153,6 @@
 		DE7A166A280E3A20008F1886 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		DE7A166F280E3A20008F1886 /* SessionControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionControl.swift; sourceTree = "<group>"; };
 		DE7A1670280E3A20008F1886 /* StreamerList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamerList.swift; sourceTree = "<group>"; };
-		DE7A1671280E3A20008F1886 /* Staging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
 		DE7A1672280E3A20008F1886 /* Intro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		DE7A1673280E3A20008F1886 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		DE7A1675280E3A20008F1886 /* FrameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameViewModel.swift; sourceTree = "<group>"; };
@@ -167,6 +168,8 @@
 		DEB0D0F828564FD90081F957 /* ContentManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManagement.swift; sourceTree = "<group>"; };
 		DEB0D0FC2856501C0081F957 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		DEB32E482845540D00C187B5 /* NetworkCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCom.swift; sourceTree = "<group>"; };
+		DEF2D3D42894228F00B75A91 /* Staging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
+		DEF2D3D8289430C100B75A91 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (iOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,7 +241,6 @@
 			children = (
 				DE7A1663280E3A20008F1886 /* Identity.swift */,
 				DE405193285CDFDC001B0C56 /* RecordVideo.swift */,
-				DE7A1671280E3A20008F1886 /* Staging.swift */,
 				DE7A1669280E3A20008F1886 /* LiveFeed.swift */,
 			);
 			path = Deprecated;
@@ -288,7 +290,7 @@
 				DE7A1623280E39CD008F1886 /* MelioraApp.swift */,
 				DE7A1676280E3A20008F1886 /* Data Models */,
 				DE7A165F280E3A20008F1886 /* Views */,
-				DE7A167B280E3A20008F1886 /* ViewModels */,
+				DE7A167B280E3A20008F1886 /* Data Providers */,
 				DE7A1625280E39CF008F1886 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -334,6 +336,8 @@
 		DE7A165F280E3A20008F1886 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DEF2D3D7289430AB00B75A91 /* Custom */,
+				DE7A1680280E3A20008F1886 /* Extensions */,
 				DE7A1672280E3A20008F1886 /* Intro.swift */,
 				DE7A1673280E3A20008F1886 /* SignIn.swift */,
 				DE7A1662280E3A20008F1886 /* Main Menu */,
@@ -368,15 +372,14 @@
 			path = "Data Models";
 			sourceTree = "<group>";
 		};
-		DE7A167B280E3A20008F1886 /* ViewModels */ = {
+		DE7A167B280E3A20008F1886 /* Data Providers */ = {
 			isa = PBXGroup;
 			children = (
 				DEB32E482845540D00C187B5 /* NetworkCom.swift */,
 				DE7A166A280E3A20008F1886 /* Session.swift */,
 				DE7A167C280E3A20008F1886 /* AV */,
-				DE7A1680280E3A20008F1886 /* Extensions */,
 			);
-			path = ViewModels;
+			path = "Data Providers";
 			sourceTree = "<group>";
 		};
 		DE7A167C280E3A20008F1886 /* AV */ = {
@@ -441,6 +444,7 @@
 		DEB0D0F028564A320081F957 /* Be Seen */ = {
 			isa = PBXGroup;
 			children = (
+				DEF2D3D42894228F00B75A91 /* Staging.swift */,
 				DE405190285CDF35001B0C56 /* BeSeen.swift */,
 				DEB0D0F128564A670081F957 /* UI */,
 			);
@@ -479,6 +483,14 @@
 				DEB0D0FC2856501C0081F957 /* AppSettings.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		DEF2D3D7289430AB00B75A91 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2D3D8289430C100B75A91 /* QuoteView.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -720,10 +732,10 @@
 				DE405194285CDFDC001B0C56 /* RecordVideo.swift in Sources */,
 				DE7A1689280E3A20008F1886 /* WatchVideos.swift in Sources */,
 				DE405198285CE506001B0C56 /* CameraVideoFeed.swift in Sources */,
-				DE7A1697280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1683280E3A20008F1886 /* Settings.swift in Sources */,
 				DE4051742856764A001B0C56 /* StartSessionLabel.swift in Sources */,
 				DE7A16A7280E3A20008F1886 /* FrameSupplier.swift in Sources */,
+				DEF2D3D52894228F00B75A91 /* Staging.swift in Sources */,
 				DE7A169D280E3A20008F1886 /* FrameViewModel.swift in Sources */,
 				DE7A16AD280E3A20008F1886 /* View.swift in Sources */,
 				DE7A1699280E3A20008F1886 /* Intro.swift in Sources */,
@@ -740,6 +752,7 @@
 				DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */,
 				DE7A1693280E3A20008F1886 /* SessionControl.swift in Sources */,
 				DE4051A3285CF714001B0C56 /* SessionControlLabel.swift in Sources */,
+				DEF2D3D9289430C100B75A91 /* QuoteView.swift in Sources */,
 				DE152E462855231900F5E0ED /* MainMenu.swift in Sources */,
 				DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */,
 				DEB0D0FD2856501C0081F957 /* AppSettings.swift in Sources */,
@@ -760,7 +773,6 @@
 				DE4051A1285CF33B001B0C56 /* RecordingSessionControl.swift in Sources */,
 				DE7A168E280E3A20008F1886 /* Session.swift in Sources */,
 				DE7A168A280E3A20008F1886 /* WatchVideos.swift in Sources */,
-				DE7A1698280E3A20008F1886 /* Staging.swift in Sources */,
 				DE7A1684280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */,
 				DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */,
@@ -784,8 +796,10 @@
 				DE4051722856718F001B0C56 /* BlinkingLabel.swift in Sources */,
 				DE7A1694280E3A20008F1886 /* SessionControl.swift in Sources */,
 				DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */,
+				DEF2D3DA289430C100B75A91 /* QuoteView.swift in Sources */,
 				DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */,
 				DE7A16AA280E3A20008F1886 /* CameraError.swift in Sources */,
+				DEF2D3D62894228F00B75A91 /* Staging.swift in Sources */,
 				DEB32E4A2845540D00C187B5 /* NetworkCom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

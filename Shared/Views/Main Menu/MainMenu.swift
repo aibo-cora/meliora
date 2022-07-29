@@ -34,7 +34,7 @@ struct MainMenu: View {
                             Text("Watch")
                         }
                     }
-                BeSeen(user: user, session: session)
+                Staging(user: user, session: session)
                     .tabItem {
                         VStack {
                             Image(systemName: "livephoto.play")
