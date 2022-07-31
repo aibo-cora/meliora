@@ -41,7 +41,7 @@ struct MainMenu: View {
                             Text("Be Seen")
                         }
                     }
-                Notifications()
+                Social()
                     .tabItem {
                         VStack {
                             Image(systemName: "bubble.left.fill")
@@ -63,16 +63,6 @@ struct MainMenu: View {
                         }
                     }
             }
-        }
-    }
-}
-
-extension View {
-    @ViewBuilder func isHidden(_ isHidden: Bool) -> some View {
-        if isHidden {
-            self.hidden()
-        } else {
-            self
         }
     }
 }

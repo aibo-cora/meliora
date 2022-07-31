@@ -80,8 +80,8 @@ struct Staging_Previews: PreviewProvider {
                                   rank: User.Rank(id: 1),
                                   createdAt: Date()),
                     session: Session())
+                .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+                .previewDisplayName("iPhone 13 Pro Max")
         }
-        .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
-        .previewDisplayName("iPhone 13 Pro Max")
     }
 }

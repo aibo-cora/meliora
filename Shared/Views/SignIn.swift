@@ -11,7 +11,6 @@ import Joint
 
 struct SignIn: View {
     @EnvironmentObject var network: NetworkCom
-
     var user: User
     
     var body: some View {
@@ -25,7 +24,7 @@ struct SignIn: View {
                 case .success (let auth):
                     guard let credentials = auth.credential as? ASAuthorizationAppleIDCredential else { return }
 
-                    SaveCredentials(credentials: credentials)
+                    saveCredentials(credentials: credentials)
                 case .failure (let error):
                     print("Authorization failed: " + error.localizedDescription)
                 }
@@ -37,7 +36,7 @@ struct SignIn: View {
     
     /// This should be saved in the keychain or external database to survive app deletion.
     /// - Parameter credentials: Apple auth credentials
-    private func SaveCredentials(credentials: ASAuthorizationAppleIDCredential) {
+    private func saveCredentials(credentials: ASAuthorizationAppleIDCredential) {
         let user = User(first: credentials.fullName?.givenName ?? "",
                         last: credentials.fullName?.familyName ?? "",
                         email: credentials.email ?? "",
@@ -60,7 +59,7 @@ struct SignIn: View {
             } catch NetworkCom.NetworkErrors.request {
                 print("Bad request.")
             } catch {
-                print("Could not decode response.")
+                print("Error=\(error.localizedDescription)")
             }
         }
     }

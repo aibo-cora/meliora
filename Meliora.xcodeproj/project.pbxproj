@@ -73,8 +73,8 @@
 		DEA44B67284D23AF00729989 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA44B65284D23AF00729989 /* Onboarding.swift */; };
 		DEA44B6A284D2EFE00729989 /* SpecialElite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */; };
 		DEA44B6B284D2EFE00729989 /* SpecialElite-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */; };
-		DEB0D0F428564F100081F957 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F328564F100081F957 /* Notifications.swift */; };
-		DEB0D0F528564F100081F957 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F328564F100081F957 /* Notifications.swift */; };
+		DEB01B352896C11200CB7762 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB01B342896C11200CB7762 /* SearchView.swift */; };
+		DEB01B362896C11200CB7762 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB01B342896C11200CB7762 /* SearchView.swift */; };
 		DEB0D0F928564FD90081F957 /* ContentManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F828564FD90081F957 /* ContentManagement.swift */; };
 		DEB0D0FA28564FD90081F957 /* ContentManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0F828564FD90081F957 /* ContentManagement.swift */; };
 		DEB0D0FD2856501C0081F957 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0D0FC2856501C0081F957 /* AppSettings.swift */; };
@@ -85,6 +85,12 @@
 		DEF2D3D62894228F00B75A91 /* Staging.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3D42894228F00B75A91 /* Staging.swift */; };
 		DEF2D3D9289430C100B75A91 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3D8289430C100B75A91 /* QuoteView.swift */; };
 		DEF2D3DA289430C100B75A91 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3D8289430C100B75A91 /* QuoteView.swift */; };
+		DEF2D3DC28944C5E00B75A91 /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3DB28944C5E00B75A91 /* Social.swift */; };
+		DEF2D3DD28944C5E00B75A91 /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3DB28944C5E00B75A91 /* Social.swift */; };
+		DEF2D3E028945C0100B75A91 /* SocialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3DF28945C0100B75A91 /* SocialViewModel.swift */; };
+		DEF2D3E128945C0100B75A91 /* SocialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3DF28945C0100B75A91 /* SocialViewModel.swift */; };
+		DEF2D3E32895DE6200B75A91 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3E22895DE6200B75A91 /* UserStore.swift */; };
+		DEF2D3E42895DE6200B75A91 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF2D3E22895DE6200B75A91 /* UserStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,12 +170,15 @@
 		DE7A16B1280E3A7D008F1886 /* Meliora--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Meliora--iOS--Info.plist"; sourceTree = "<group>"; };
 		DEA44B65284D23AF00729989 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		DEA44B69284D2EFE00729989 /* SpecialElite-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpecialElite-Regular.ttf"; sourceTree = "<group>"; };
-		DEB0D0F328564F100081F957 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		DEB01B342896C11200CB7762 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		DEB0D0F828564FD90081F957 /* ContentManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManagement.swift; sourceTree = "<group>"; };
 		DEB0D0FC2856501C0081F957 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		DEB32E482845540D00C187B5 /* NetworkCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCom.swift; sourceTree = "<group>"; };
 		DEF2D3D42894228F00B75A91 /* Staging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staging.swift; sourceTree = "<group>"; };
 		DEF2D3D8289430C100B75A91 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		DEF2D3DB28944C5E00B75A91 /* Social.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
+		DEF2D3DF28945C0100B75A91 /* SocialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewModel.swift; sourceTree = "<group>"; };
+		DEF2D3E22895DE6200B75A91 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		E2F4DC952F412A63702194DC /* Pods_Meliora__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meliora__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC9B16488216A1BA1756256 /* Pods-Meliora (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meliora (iOS).release.xcconfig"; path = "Target Support Files/Pods-Meliora (iOS)/Pods-Meliora (iOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,8 +295,9 @@
 		DE7A1622280E39CD008F1886 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DEA44B68284D2EEF00729989 /* Fonts */,
 				DE7A1623280E39CD008F1886 /* MelioraApp.swift */,
+				DEF2D3DE28945BEA00B75A91 /* View Models */,
+				DEA44B68284D2EEF00729989 /* Fonts */,
 				DE7A1676280E3A20008F1886 /* Data Models */,
 				DE7A165F280E3A20008F1886 /* Views */,
 				DE7A167B280E3A20008F1886 /* Data Providers */,
@@ -368,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2B4FC42848F00A007A0BFA /* AppUser.swift */,
+				DEF2D3E22895DE6200B75A91 /* UserStore.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -419,6 +430,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		DEB01B332896C0E400CB7762 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DEB01B342896C11200CB7762 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		DEB0D0EE285649C90081F957 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,7 +483,9 @@
 		DEB0D0F228564EB00081F957 /* Comm */ = {
 			isa = PBXGroup;
 			children = (
-				DEB0D0F328564F100081F957 /* Notifications.swift */,
+				DEB01B332896C0E400CB7762 /* Search */,
+				DEF2D3DF28945C0100B75A91 /* SocialViewModel.swift */,
+				DEF2D3DB28944C5E00B75A91 /* Social.swift */,
 			);
 			path = Comm;
 			sourceTree = "<group>";
@@ -491,6 +512,13 @@
 				DEF2D3D8289430C100B75A91 /* QuoteView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		DEF2D3DE28945BEA00B75A91 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -747,11 +775,14 @@
 				DEA44B66284D23AF00729989 /* Onboarding.swift in Sources */,
 				DE7A1687280E3A20008F1886 /* Watching.swift in Sources */,
 				DE7A1695280E3A20008F1886 /* StreamerList.swift in Sources */,
-				DEB0D0F428564F100081F957 /* Notifications.swift in Sources */,
 				DE2B4FC52848F00A007A0BFA /* AppUser.swift in Sources */,
 				DE7A169B280E3A20008F1886 /* SignIn.swift in Sources */,
+				DEF2D3E028945C0100B75A91 /* SocialViewModel.swift in Sources */,
+				DEB01B352896C11200CB7762 /* SearchView.swift in Sources */,
 				DE7A1693280E3A20008F1886 /* SessionControl.swift in Sources */,
 				DE4051A3285CF714001B0C56 /* SessionControlLabel.swift in Sources */,
+				DEF2D3E32895DE6200B75A91 /* UserStore.swift in Sources */,
+				DEF2D3DC28944C5E00B75A91 /* Social.swift in Sources */,
 				DEF2D3D9289430C100B75A91 /* QuoteView.swift in Sources */,
 				DE152E462855231900F5E0ED /* MainMenu.swift in Sources */,
 				DE7A16AF280E3A20008F1886 /* CGImage.swift in Sources */,
@@ -769,13 +800,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEB0D0FE2856501C0081F957 /* AppSettings.swift in Sources */,
-				DEB0D0F528564F100081F957 /* Notifications.swift in Sources */,
 				DE4051A1285CF33B001B0C56 /* RecordingSessionControl.swift in Sources */,
 				DE7A168E280E3A20008F1886 /* Session.swift in Sources */,
 				DE7A168A280E3A20008F1886 /* WatchVideos.swift in Sources */,
 				DE7A1684280E3A20008F1886 /* Settings.swift in Sources */,
 				DE7A16A8280E3A20008F1886 /* FrameSupplier.swift in Sources */,
 				DE7A169E280E3A20008F1886 /* FrameViewModel.swift in Sources */,
+				DEF2D3E128945C0100B75A91 /* SocialViewModel.swift in Sources */,
 				DE40519E285CF21F001B0C56 /* LiveSessionControl.swift in Sources */,
 				DE7A16AE280E3A20008F1886 /* View.swift in Sources */,
 				DE405192285CDF35001B0C56 /* BeSeen.swift in Sources */,
@@ -786,6 +817,7 @@
 				DE7A1686280E3A20008F1886 /* Identity.swift in Sources */,
 				DE152E472855231900F5E0ED /* MainMenu.swift in Sources */,
 				DE7A168C280E3A20008F1886 /* LiveFeed.swift in Sources */,
+				DEF2D3DD28944C5E00B75A91 /* Social.swift in Sources */,
 				DE7A1688280E3A20008F1886 /* Watching.swift in Sources */,
 				DEB0D0FA28564FD90081F957 /* ContentManagement.swift in Sources */,
 				DE7A1696280E3A20008F1886 /* StreamerList.swift in Sources */,
@@ -795,8 +827,10 @@
 				DE405199285CE506001B0C56 /* CameraVideoFeed.swift in Sources */,
 				DE4051722856718F001B0C56 /* BlinkingLabel.swift in Sources */,
 				DE7A1694280E3A20008F1886 /* SessionControl.swift in Sources */,
+				DEB01B362896C11200CB7762 /* SearchView.swift in Sources */,
 				DE7A16B0280E3A20008F1886 /* CGImage.swift in Sources */,
 				DEF2D3DA289430C100B75A91 /* QuoteView.swift in Sources */,
+				DEF2D3E42895DE6200B75A91 /* UserStore.swift in Sources */,
 				DE7A164C280E39CF008F1886 /* MelioraApp.swift in Sources */,
 				DE7A16AA280E3A20008F1886 /* CameraError.swift in Sources */,
 				DEF2D3D62894228F00B75A91 /* Staging.swift in Sources */,
@@ -977,7 +1011,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
@@ -1018,7 +1052,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghafla.aibo.Meliora;
 				PRODUCT_NAME = Meliora;
 				SDKROOT = iphoneos;
